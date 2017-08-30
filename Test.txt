@@ -1,16 +1,9 @@
 This is a Third merge test... Done by Juan
 100% working - Juan
 
-everyone lets test out our features here!
-<<<<<<< HEAD
-
 Seems to be working now. 
 -Brad was here
-=======
->>>>>>> 641ca868135e85dccdbd30072070f45be6e2c78d
 
 yay!!!! i believe Brad and Juan have confirmed they are in BUSINESS!!!
 
 just need confirmation from Sabree... then we will be 100% effective!
-
-test on tests on tests on tests
