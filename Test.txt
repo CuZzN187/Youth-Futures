@@ -1,5 +1,5 @@
 This is a Third merge test... Done by Juan
-100% working - Juan
+- Juan 100% working 
 
 Seems to be working now. 
 -Brad was here 100% working
