@@ -1,3 +1,6 @@
 merge test 
 
 everyone lets test out our features here!
+
+Seems to be working now. 
+-Brad was here
