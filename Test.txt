@@ -1,6 +1,9 @@
-merge test 
+This is a second merge test... Done by Juan
 
 everyone lets test out our features here!
+<<<<<<< HEAD
 
 Seems to be working now. 
 -Brad was here
+=======
+>>>>>>> 641ca868135e85dccdbd30072070f45be6e2c78d
