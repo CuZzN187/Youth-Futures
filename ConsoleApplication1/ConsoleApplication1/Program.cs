@@ -60,6 +60,22 @@ namespace ConsoleApplication1
             {
                 Console.WriteLine(val);
             }
+
+
+            //making a list, some basic operations and viewing
+            List<string> lstNames = new List<string>();
+            lstNames.Add("The");
+            lstNames.Add("404");
+            lstNames.Add("is");
+            lstNames.Add("worst"); //definitely not true
+            lstNames.Remove("worst"); //gotta get rid of that
+            lstNames.Add("best");
+
+            int lstSize = lstNames.Count();
+            //standard for syntax also applies
+            for (int i = 0; i < lstSize; ++i) {
+                Console.WriteLine("Value #" + i + " is {0}\n", lstNames[i]);
+            }
         }
     }
 }
