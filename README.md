@@ -7,6 +7,9 @@ Take a look at the To Do List that I have loaded. Need to get the SRS doc finish
 Main focus is getting the SRS finished by Tuesday. Beside your name below, put what section you are tackling. Use the SRS Template she provided to see what sections are left. Any questions, ask!
 
 Brad:
+<br/>
 Juan:
+<br/>
 SaBree:
+<br/>
 Robert:
