@@ -2,14 +2,11 @@
 
 CS3750
 
-milestone #1	documentation of the project	sept 11
+Take a look at the To Do List that I have loaded. Need to get the SRS doc finished by Tuesday. Make sure you have Visual Studio and SQL Server downloaded on your local. Any questions on Visual Studio and SQL Server, either message group members or Tuesday and THursday we will work on getting everybody up to speed.
 
+Main focus is getting the SRS finished by Tuesday. Beside your name below, put what section you are tackling. Use the SRS Template she provided to see what sections are left. Any questions, ask!
 
-milestone #2	will have the code sent to us
-
-Sabree, Juan and I (Robb) have uploaded a C# program. Take a look at it and get a little familiar with it so you can be up to speed. You will find out that it is easier than Java. There are tons of similarities so if you have any questions let any of us know. FYI, you need Visual Studio on your Mac prior to opening the file. Just fetch origin on your GitHub Desktop App and get it on your local machine (your Mac). 
-Click instructions: Youth-Futures->ConsoleApplication1->ConsoleApplication1.sln  
-
-Brad, if you want to add any other examples for Sabree to get familiar with on C# then feel free to make changes.
-
-Perfect thank you!
+Brad:
+Juan:
+SaBree:
+Robert:
