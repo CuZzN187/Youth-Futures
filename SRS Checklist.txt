@@ -13,3 +13,10 @@ Analysis Models----------------------
 Database Schema---------------------- 
 
 Apendices
+
+
+SABREE’S GOALS
+Install MVC into VS
+install ASP.net component 
+Refresh on SQL server. 
+
