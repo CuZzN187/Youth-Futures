@@ -10,6 +10,7 @@ namespace ConsoleApplication1
     {
         public static void update(ref int num)
         {
+            error!!!!!<<<<
             num = 1;
         }
         static void Main(string[] args)
