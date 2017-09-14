@@ -19,7 +19,7 @@ namespace ASPNetWebTest.Controllers {
 
         public ActionResult Contact() {
             ViewBag.Message = "Your contact page.";
-
+            //add ur code
             return View();
         }
     }
