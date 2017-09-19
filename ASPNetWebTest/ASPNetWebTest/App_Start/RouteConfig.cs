@@ -15,6 +15,12 @@ namespace ASPNetWebTest {
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            //creates a new route to the 
+            //routes.MapRoute(
+            //    name: "Donor", //goes to the donor page
+            //    url: "donors/{res}" //but the url is different; 'donors'. Valid
+            //    );
         }
     }
 }
