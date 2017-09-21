@@ -1,6 +1,6 @@
 # Youth-Futures - ANNOUNCEMENTS
 
-CS3750
+CS3750 MILESTONE 2
 
 	• Main page view (non-edit view)
 		○ NAV bar (Bradley)
