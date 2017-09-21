@@ -1,10 +1,19 @@
 # Youth-Futures - ANNOUNCEMENTS
 
-CS3750
+CS3750 MILESTONE 2
 
-Take a look at the To Do List that I have loaded. Need to get the SRS doc finished by Tuesday. Make sure you have Visual Studio and SQL Server downloaded on your local. Any questions on Visual Studio and SQL Server, either message group members or Tuesday and THursday we will work on getting everybody up to speed.
-
-Main focus is getting the SRS finished by Tuesday. Beside your name below, put what section you are tackling. Use the SRS Template she provided to see what sections are left. Any questions, ask!
+	• Main page view (non-edit view)
+		○ NAV bar (Bradley)
+		○ Links to pages (SaBree)
+		○ Polish (Juan)
+	• Secondary pages (Holding off)
+		○ Pages 
+		○ Links to pages
+	• Main page (Edit view)
+		○ Side edit NAV bar (Bradley)
+		○ Login requirement (Robb)
+	• SRS Updates 
+    We should do this last
 
 Brad:
 <br/>
