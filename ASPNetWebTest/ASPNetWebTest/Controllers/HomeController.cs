@@ -7,8 +7,14 @@ using System.Web.Mvc;
 namespace ASPNetWebTest.Controllers {
     //controller files must end with 'Controller'
     public class HomeController : Controller {
+        //we will need an ActionResult for each page
+        //function at the top goes first, regardless if INDEX exists
         public ActionResult Index() {
             //this is a test from Robert
+            return View();
+        }
+
+        public ActionResult Programs() {
             return View();
         }
 
