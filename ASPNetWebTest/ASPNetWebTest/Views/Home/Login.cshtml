@@ -6,12 +6,44 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8" />
     <title>Login</title>
+
+    <meta name="description" content="Youth Futures Login Page" />
+    <meta name="keywords" content="keywords" />
+    <meta name="viewport" content="width:=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+
+    </script>
 </head>
+
 <body>
-    <div> 
-        <ps tyle="position:absolute; top:500px;"> Login </pstyle="position:absolute;>
+    <h3>@ViewBag.Title.</h3>
+    <h3>@ViewBag.Message</h3>
+    <!--Log in page form-->
+    <div class="text-center">
+        <form action="/">
+            <div class="container">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Username" name="uname" required>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <input type="checkbox" checked="checked"> Remember me
+            </div>
+
+            <div id="site-color">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <button type="button" class="forgotPassbtn">Forgot Password?</button>
+            </div>
+        </form>
     </div>
 </body>
 </html>

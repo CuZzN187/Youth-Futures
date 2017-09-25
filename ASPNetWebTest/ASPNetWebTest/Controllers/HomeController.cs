@@ -33,5 +33,12 @@ namespace ASPNetWebTest.Controllers {
             //add ur code
             return View();
         }
+
+        public ActionResult Login()
+        {
+            ViewBag.Message = "THIS IS THE LOG IN PAGE!";
+            //add ur code
+            return View();
+        }
     }
 }
