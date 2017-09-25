@@ -2,7 +2,7 @@
 
 namespace ASPNetWebTest.Controllers {
     //controller files must end with 'Controller'
-    public class HomeController : Controller {
+    public class HomeController : Controller {  
         //we will need an ActionResult for each page
         //function at the top goes first, regardless if INDEX exists
         
@@ -33,6 +33,5 @@ namespace ASPNetWebTest.Controllers {
             //add ur code
             return View();
         }
-
     }
 }
