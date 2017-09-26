@@ -13,6 +13,9 @@ namespace ASPNetWebTest {
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            //the configuration for log4net
+            log4net.Config.XmlConfigurator.Configure();
         }
     }
 }

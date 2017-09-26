@@ -1,13 +1,24 @@
 ﻿using System.Web.Mvc;
+using log4net;
 
 namespace ASPNetWebTest.Controllers {
     //controller files must end with 'Controller'
     public class HomeController : Controller {  
         //we will need an ActionResult for each page
         //function at the top goes first, regardless if INDEX exists
-        
+
+        private static log4net.ILog Log { get; set; }
+
+        ILog log = log4net.LogManager.GetLogger(typeof(HomeController));
+
+        //will need to make a static log class
+
         public ActionResult Index() {
-            //this is a test from Robert
+
+            log.Debug("Debug Message");
+            log.Warn("Warn Message");
+            log.Error("Error Message");
+            log.Fatal("Fatal Message");
             return View();
         }
 
