@@ -8,7 +8,7 @@ CS3750 MILESTONE 2
 		○ Polish (Juan)
 	• Secondary pages (Holding off)
 		○ Pages 
-		○ Links to pages
+		○ Links to pages (Robb) - sorry couldnt help it
 	• Main page (Edit view)
 		○ Side edit NAV bar (Bradley)
 		○ Login requirement (Robb)
