@@ -13,6 +13,7 @@ CS3750 MILESTONE 2
 		○ Side edit NAV bar (Bradley)
 		○ Login requirement (Robb)
 	• SRS Updates 
+		○ Logging errors (Robb)
     We should do this last
 
 Brad:
