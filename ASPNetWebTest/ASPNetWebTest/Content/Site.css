@@ -278,7 +278,7 @@ h1, h2, h4, h6 {
 }
 
 .main-header {
-    background-image: url('./resources/home_header.png');
+    background-image: url('../resources/yf_logo.jpg');
     min-height: 509px;
     background-repeat: no-repeat;
 }
@@ -517,7 +517,7 @@ footer .row {
 .boxes {
     margin-top: 52px;
     margin-bottom: 72px;
-    padding: 0 97px;
+    padding: 0px;
 }
 
     .boxes > .panel {
@@ -630,7 +630,7 @@ footer .row {
 }
 
 .purpose {
-    background-image: url(./resources/purpose.png);
+    background-image: url(../resources/purpose.png);
     background-repeat: no-repeat;
     background-color: #474747;
     min-height: 695px;
@@ -708,7 +708,7 @@ footer .row {
 .purpose-boxes {
     margin-top: 52px;
     margin-bottom: 72px;
-    padding: 0 97px;
+    padding: 0px;
     /* height:  100%; */
 }
 

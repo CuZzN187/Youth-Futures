@@ -175,6 +175,7 @@
     <Content Include="resources\calendar_icon%402x.png" />
     <Content Include="resources\calendar_icon%403x.png" />
     <Content Include="resources\calendar_icon.png" />
+    <Content Include="resources\purpose.png" />
     <Content Include="resources\social_fb%402x.png" />
     <Content Include="resources\social_fb%403x.png" />
     <Content Include="resources\social_fb.png" />
@@ -207,6 +208,7 @@
     <Content Include="resources\door_icon.png" />
     <Content Include="resources\house_icon.png" />
     <Content Include="resources\van_icon.png" />
+    <Content Include="resources\yf_logo.svg" />
     <Content Include="Scripts\404Script.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -258,7 +260,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
