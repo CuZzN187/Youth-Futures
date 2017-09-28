@@ -2,18 +2,27 @@
 
 CS3750 MILESTONE 2
 
-	• Main page view (non-edit view)
-		○ NAV bar (Bradley)
-		○ Links to pages (SaBree)
-		○ Polish (Juan)
-	• Secondary pages (Holding off)
+	• Main page view (non-edit view) - FINISHED!
+		○ NAV bar (Bradley) - FINISHED!
+		○ Links to pages (SaBree) - FINISHED!
+		○ Polish (Juan) - FINISHED!
+	• Secondary pages
 		○ Pages 
-		○ Links to pages (Robb) - sorry couldnt help it
+			○ Programs
+				○ edit page - Street Outreach
+			○ Get Involved
+				○ edit page - Donate, Events, Donor Recognition
+			○ About Us
+				○ edit page - History, Staff, Board, Media
+			○ Contact
+				○ edit page - contact info
+		○ Links to pages (Robb) - FINISHED!
+		○ Polish
 	• Main page (Edit view)
 		○ Side edit NAV bar (Bradley)
-		○ Login requirement (Robb)
+		○ Login requirement (Robb) - FINISHED!
 	• SRS Updates 
-		○ Logging errors (Robb)
+		○ Logging errors (Brad)
     We should do this last
 
 Brad:
