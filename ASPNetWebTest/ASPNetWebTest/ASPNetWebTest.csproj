@@ -156,6 +156,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\ErrorLog.cs" />
+    <Compile Include="Models\ErrorLogsController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -246,6 +247,11 @@
     <Content Include="Views\Home\Involved.cshtml" />
     <Content Include="Views\Home\Donate.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\ErrorLogs\Create.cshtml" />
+    <Content Include="Views\ErrorLogs\Delete.cshtml" />
+    <Content Include="Views\ErrorLogs\Details.cshtml" />
+    <Content Include="Views\ErrorLogs\Edit.cshtml" />
+    <Content Include="Views\ErrorLogs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
