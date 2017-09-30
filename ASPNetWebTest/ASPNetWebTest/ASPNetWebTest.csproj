@@ -177,6 +177,9 @@
     <Content Include="resources\calendar_icon%402x.png" />
     <Content Include="resources\calendar_icon%403x.png" />
     <Content Include="resources\calendar_icon.png" />
+    <Content Include="resources\outreach%402x.png" />
+    <Content Include="resources\outreach%403x.png" />
+    <Content Include="resources\outreach.png" />
     <Content Include="resources\purpose.png" />
     <Content Include="resources\social_fb%402x.png" />
     <Content Include="resources\social_fb%403x.png" />
