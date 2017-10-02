@@ -285,7 +285,13 @@ h1, h2, h4, h6 {
     background-repeat: no-repeat;
 }
 
-.main-header-outreach {
+.main-outreach {
+    background-image: url('../resources/outreach.png');
+    min-height: 509px;
+    background-repeat: no-repeat;
+}
+
+.main-about {
     background-image: url('../resources/outreach.png');
     min-height: 509px;
     background-repeat: no-repeat;
