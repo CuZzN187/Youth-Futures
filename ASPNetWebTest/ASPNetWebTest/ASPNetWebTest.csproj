@@ -162,10 +162,14 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\secondaryStyles.css" />
+    <Content Include="Content\fonts.css" />
+    <Content Include="Content\main.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="resources\FB.png" />
     <Content Include="resources\giv_development%402x.png" />
     <Content Include="resources\giv_development%403x.png" />
     <Content Include="resources\giv_development.png" />
@@ -177,6 +181,7 @@
     <Content Include="resources\calendar_icon%402x.png" />
     <Content Include="resources\calendar_icon%403x.png" />
     <Content Include="resources\calendar_icon.png" />
+    <Content Include="resources\IG.png" />
     <Content Include="resources\outreach%402x.png" />
     <Content Include="resources\outreach%403x.png" />
     <Content Include="resources\outreach.png" />
@@ -199,6 +204,8 @@
     <Content Include="resources\page-1%402x.png" />
     <Content Include="resources\page-1%403x.png" />
     <Content Include="resources\page-1.png" />
+    <Content Include="resources\TMBLR.png" />
+    <Content Include="resources\TW.png" />
     <Content Include="resources\van_icon%402x.png" />
     <Content Include="resources\van_icon%403x.png" />
     <Content Include="resources\house_icon%402x.png" />
@@ -232,6 +239,8 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="resources\yf_logo.jpg" />
+    <Content Include="Scripts\secondaryScripts.js" />
+    <Content Include="Views\Home\secondary.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
