@@ -166,13 +166,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-<<<<<<< HEAD
-    <Content Include="resources\aboutus%402x.png" />
-    <Content Include="resources\aboutus%403x.png" />
-    <Content Include="resources\aboutus.png" />
-=======
     <Content Include="resources\arrow_right.jpg" />
->>>>>>> d807a36adfa9b2d021780dcf5793b3ff11513407
     <Content Include="resources\giv_development%402x.png" />
     <Content Include="resources\giv_development%403x.png" />
     <Content Include="resources\giv_development.png" />
