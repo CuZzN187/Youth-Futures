@@ -45,6 +45,7 @@
     right: 0px;
     color: white;
     z-index: 3000;
+    visibility: visible;
 }
 
 #toggleView {
