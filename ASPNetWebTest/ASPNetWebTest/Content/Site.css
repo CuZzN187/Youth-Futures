@@ -18,6 +18,23 @@
     src: url('resources/quicksand-bold.otf') format('opentype');
 }
 
+.attrView {
+    width: 100%;
+    height: 20%;
+    border-bottom: 2px solid white;
+    box-sizing: border-box;
+}
+
+.attrName {
+    font-size: 2em;
+    color: white;
+}
+
+.attrValue {
+    font-size: 1.25em;
+    color: lightgray;
+}
+
 #attributeViewBox {
     background-color: #111019;
     height: 100%;
