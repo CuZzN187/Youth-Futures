@@ -8,14 +8,16 @@ CS3750 MILESTONE 2
 		○ Polish (Juan) - FINISHED!
 	• Secondary pages
 		○ Pages 
-			○ Programs
-				○ edit page - Street Outreach
+			○ Programs FINISHED!
+				○ edit page - Street Outreach (Robb) - FINISHED!
 			○ Get Involved
-				○ edit page - Donate, Events, Donor Recognition
+				○ edit page - Donate, Events, Donor Recognition (Robb)
 			○ About Us
-				○ edit page - History, Staff, Board, Media
-			○ Contact
-				○ edit page - contact info
+				○ edit page - History, Staff, Board, Media - (Juan) - just need pictures
+			○ Contact FINISHED!
+				○ edit page - contact info (Juan) - FINISHED!
+			○ Donate
+				○ edit page (SaBree) ----- put donate and donor recognition on this page????
 		○ Links to pages (Robb) - FINISHED!
 		○ Polish
 	• Main page (Edit view)
