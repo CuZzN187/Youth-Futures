@@ -11,13 +11,13 @@ CS3750 MILESTONE 2
 			○ Programs FINISHED!
 				○ edit page - Street Outreach (Robb) - FINISHED!
 			○ Get Involved
-				○ edit page - Donate, Events, Donor Recognition
+				○ edit page - Donate, Events, Donor Recognition (Robb)
 			○ About Us
 				○ edit page - History, Staff, Board, Media - (Juan) - just need pictures
 			○ Contact FINISHED!
 				○ edit page - contact info (Juan) - FINISHED!
 			○ Donate
-				○ edit page (SaBree)
+				○ edit page (SaBree) ----- put donate and donor recognition on this page????
 		○ Links to pages (Robb) - FINISHED!
 		○ Polish
 	• Main page (Edit view)
