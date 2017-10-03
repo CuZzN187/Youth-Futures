@@ -200,6 +200,9 @@
     <Content Include="resources\page-1%402x.png" />
     <Content Include="resources\page-1%403x.png" />
     <Content Include="resources\page-1.png" />
+    <Content Include="resources\street-outreach-header%402x.png" />
+    <Content Include="resources\street-outreach-header%403x.png" />
+    <Content Include="resources\street-outreach-header.png" />
     <Content Include="resources\van_icon%402x.png" />
     <Content Include="resources\van_icon%403x.png" />
     <Content Include="resources\house_icon%402x.png" />

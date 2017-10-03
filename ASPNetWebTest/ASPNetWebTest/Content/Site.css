@@ -688,12 +688,13 @@ footer .row {
 }
 
 .program-title {
-    margin: 97px 86px 0 86px;
+    margin: 200px;
 }
 
-.program-title h2 {
-    margin: 0;
-}
+    .program-title h2 {
+        margin: 0;
+        font-size: 84px;
+    }
 
 .purpose-title {
     margin: 97px 86px 0 86px;
@@ -729,10 +730,8 @@ footer .row {
 }
 
 .outreachpic {
-    background-image: url(../resources/outreach.png);
+    background-image: url(../resources/street-outreach-header.png);
     background-repeat: no-repeat;
-    background-color: #474747;
-    min-height: 695px;
 }
 
 .purpose-stats {
