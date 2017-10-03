@@ -1,5 +1,5 @@
 ﻿function toggleView() {
     document.getElementById("attributeViewBox").style.width = "0px";
     document.getElementById("toggleView").style.right = "0px";
-    console.log("RAN");
+    document.getElementById("btnSubmit").style.visibility = "hidden";
 }
