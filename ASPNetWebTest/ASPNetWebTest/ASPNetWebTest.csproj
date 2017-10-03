@@ -170,6 +170,9 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="resources\arrow_right.jpg" />
+    <Content Include="resources\cart.png" />
+    <Content Include="resources\dollar.png" />
+    <Content Include="resources\FB.png" />
     <Content Include="resources\giv_development%402x.png" />
     <Content Include="resources\giv_development%403x.png" />
     <Content Include="resources\giv_development.png" />
@@ -181,7 +184,9 @@
     <Content Include="resources\calendar_icon%402x.png" />
     <Content Include="resources\calendar_icon%403x.png" />
     <Content Include="resources\calendar_icon.png" />
+    <Content Include="resources\hand.png" />
     <Content Include="resources\history_header.jpg" />
+    <Content Include="resources\IG.png" />
     <Content Include="resources\outreach%402x.png" />
     <Content Include="resources\outreach%403x.png" />
     <Content Include="resources\outreach.png" />
@@ -207,6 +212,8 @@
     <Content Include="resources\street-outreach-header%402x.png" />
     <Content Include="resources\street-outreach-header%403x.png" />
     <Content Include="resources\street-outreach-header.png" />
+    <Content Include="resources\TR.png" />
+    <Content Include="resources\TW.png" />
     <Content Include="resources\van_icon%402x.png" />
     <Content Include="resources\van_icon%403x.png" />
     <Content Include="resources\house_icon%402x.png" />
