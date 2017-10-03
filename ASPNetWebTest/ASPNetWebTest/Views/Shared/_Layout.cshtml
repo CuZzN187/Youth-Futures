@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
+    <script type="text/javascript" src="~/Scripts/404Script.js"></script>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -31,14 +32,28 @@
             </div>
         </div>
     </div>
-    <div id="toggleView"></div>
+
+    <div id="toggleView" onclick="toggleView()"></div>
     <div id="attributeViewBox">
-        <div class="attrView" id="elementName"></div>
-        <div class="attrView" id="elementAttr1"></div>
-        <div class="attrView" id="elementAttr2"></div>
-        <div class="attrView" id="elementAttr3"></div>
+        <div class="attrView" id="elementName">
+            <div class="attrName">Text</div>
+            <div class="attrValue">14 WARM BEDS. YOUTH 12-17. YOUR TEMPORARY HOME</div>
+        </div>
+        <div class="attrView" id="elementAttr1">
+            <div class="attrName">Font-family</div>
+            <div class="attrValue">Helvetica</div>
+        </div>
+        <div class="attrView" id="elementAttr2">
+            <div class="attrName">Color</div>
+            <div class="attrValue">#0ab00a</div>
+        </div>
+        <div class="attrView" id="elementAttr3">
+            <div class="attrName">Font-size</div>
+            <div class="attrValue">14px</div>
+        </div>
         <button id="btnSubmit">Submit</button>
     </div>
+
     <div class="container body-content">
         @RenderBody()
     </div>
