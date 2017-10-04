@@ -4,19 +4,7 @@
     <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="~/Content/Site.css" />
     <script type="text/javascript" src="~/Scripts/404Script.js"></script>
-    <script>
-        // Get the modal
-        var modal = document.getElementById('id01');
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -39,8 +27,6 @@
                     <li>@Html.ActionLink("About Us", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Donate", "Donate", "Home")</li>
-                    @*<li>@Html.ActionLink("Login", "Login", "Home")</li>*@
-                    <!-- Button to open the modal login form -->
                     <li><a onclick="document.getElementById('id01').style.display='block'">Login</a></li>
 
 
@@ -54,54 +40,65 @@
         <form class="modal-content animate" action="/action_page.php">
             <div class="imgcontainer">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                <img src="~/resources/yf_logo.svg">
             </div>
 
-            <div class="container">
+            <div class="container-modal">
                 <label><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="uname" required>
-
                 <label><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
-
                 <button type="submit">Login</button>
                 <input type="checkbox" checked="checked"> Remember me
             </div>
 
-            <div class="container" style="background-color:#f1f1f1">
+            <div class="container-modal" style="background-color:#f1f1f1">
                 <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
                 <span class="psw">Forgot <a href="#">password?</a></span>
             </div>
         </form>
     </div>
-    <div id="toggleView" onclick="toggleView()"></div>
-    <div style="visibility:visible" id="attributeViewBox">
-        <div class="attrView" id="elementName">
-            <div class="attrName">Text</div>
-            <div class="attrValue">14 WARM BEDS. YOUTH 12-17. YOUR TEMPORARY HOME</div>
-        </div>
-        <div class="attrView" id="elementAttr1">
-            <div class="attrName">Font-family</div>
-            <div class="attrValue">Helvetica</div>
-        </div>
-        <div class="attrView" id="elementAttr2">
-            <div class="attrName">Color</div>
-            <div class="attrValue">#0ab00a</div>
-        </div>
-        <div class="attrView" id="elementAttr3">
-            <div class="attrName">Font-size</div>
-            <div class="attrValue">14px</div>
-        </div>
-        <button style="visibility:visible" id="btnSubmit">Submit</button>
-    </div>
 
-    <div class="container body-content">
-        @RenderBody()
-    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    
+        <div id="toggleView" onclick="toggleView()"></div>
+            <div style="visibility:visible" id="attributeViewBox">
+                <div class="attrView" id="elementName">
+                    <div class="attrName">Text</div>
+                    <div class="attrValue">14 WARM BEDS. YOUTH 12-17. YOUR TEMPORARY HOME</div>
+                </div>
+                <div class="attrView" id="elementAttr1">
+                    <div class="attrName">Font-family</div>
+                    <div class="attrValue">Helvetica</div>
+                </div>
+                <div class="attrView" id="elementAttr2">
+                    <div class="attrName">Color</div>
+                    <div class="attrValue">#0ab00a</div>
+                </div>
+                <div class="attrView" id="elementAttr3">
+                    <div class="attrName">Font-size</div>
+                    <div class="attrValue">14px</div>
+                </div>
+                <button style="visibility:visible" id="btnSubmit">Submit</button>
+            </div>
+
+        <div class="container body-content">
+            @RenderBody()
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
 </body>
 </html>
 

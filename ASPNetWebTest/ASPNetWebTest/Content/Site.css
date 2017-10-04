@@ -18,6 +18,7 @@
     src: url('resources/quicksand-bold.otf') format('opentype');
 }
 
+
 .attrView {
     width: 100%;
     height: 20%;
@@ -35,6 +36,18 @@
     color: lightgray;
 }
 
+#toggleView {
+    background-image: url("/resources/arrow_right.jpg");
+    background-size: 100% 100%;
+    height: 40px;
+    width: 20px;
+    position: fixed;
+    float: right;
+    top: 30px;
+    right: 300px;
+    z-index: 3000;
+}
+
 #attributeViewBox {
     background-color: #111019;
     height: 100%;
@@ -48,24 +61,15 @@
     visibility: visible;
 }
 
-#toggleView {
-    background-image: url("/resources/arrow_right.jpg");
-    background-size: 100% 100%;
-    height: 40px;
-    width: 20px;
-    position: fixed;
-    float: right;
-    top: 30px;
-    right: 300px;
-    z-index: 3000;
-}
-
 #btnSubmit {
     position: absolute;
     bottom: 10px;
     right: 115px;
     visibility: visible;
 }
+
+
+
 
 body {
     width: 100%;
@@ -979,8 +983,9 @@ footer .row {
         }
 }
 
+/* Full-width input fields */
 input[type=text], input[type=password] {
-    width: 55%;
+    width: 100%;/*100%----------------------------------------------------------*/
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -996,7 +1001,7 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 100%; /*100%----------------------------------------------------------log in button*/
 }
 
     button:hover {
@@ -1017,15 +1022,9 @@ button {
     position: relative;
 }
 
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
-
-.container {
+.container-modal {
     padding: 16px;
-    width: 93.3%;
-    height: 32%;
+    width: 100%; /*0%----------------------------------------------------------*/
 }
 
 span.psw {
@@ -1051,14 +1050,13 @@ span.psw {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 5px auto; /* 15% from the top and centered */
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 30%; /* Could be more or less, depending on screen size */ /*80%----------------------------------------------------------*/
 }
 
-/* The Close Button */
+/* The Close Button (x) */
 .close {
-    /* Position it in the top right corner outside of the modal */
     position: absolute;
     right: 25px;
     top: 0;
@@ -1067,7 +1065,6 @@ span.psw {
     font-weight: bold;
 }
 
-    /* Close button on hover */
     .close:hover,
     .close:focus {
         color: red;
@@ -1097,5 +1094,17 @@ span.psw {
 
     to {
         transform: scale(1)
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
     }
 }
