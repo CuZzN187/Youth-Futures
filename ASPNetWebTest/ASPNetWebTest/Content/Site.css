@@ -14,10 +14,33 @@
     min-height: 100%;
     position: fixed;
     float:left;
-    right:0px;
+    width:10%;
 }
 
+.sidebartitle{
+    font-weight:bold;
+    font-size:x-large;
+}
 
+.list {
+    color: #fff;
+    list-style: none;
+    padding-left: 0px;
+    position: relative;
+    display: inline-block;
+}
+
+    .list::first-line {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+.list > li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left: 5px solid white;
+    color: white;
+    font-weight: bolder;
+    padding-left: 35px;
+}
 
 @font-face {
     font-family: 'montserrat-light';
