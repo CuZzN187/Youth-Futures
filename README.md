@@ -23,6 +23,7 @@ CS3750 MILESTONE 2
 	• Main page (Edit view)
 		○ Side edit NAV bar (Bradley)
 		○ Login requirement (Robb) - FINISHED!
+		○ Merge all CSS (SaBree)
 	• SRS Updates 
 		○ Logging errors (Brad)
     We should do this last
