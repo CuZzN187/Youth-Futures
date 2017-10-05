@@ -13,11 +13,11 @@ CS3750 MILESTONE 2
 			○ Get Involved
 				○ edit page - Donate, Events, Donor Recognition (Robb)
 			○ About Us
-				○ edit page - History, Staff, Board, Media - (Juan) - just need pictures
+				○ edit page - History, Staff, Board, Media - (Juan) - FINISHED
 			○ Contact FINISHED!
 				○ edit page - contact info (Juan) - FINISHED!
 			○ Donate
-				○ edit page (SaBree) ----- put donate and donor recognition on this page????
+				○ edit page (SaBree) - Styling CSS needed
 		○ Links to pages (Robb) - FINISHED!
 		○ Polish
 	• Main page (Edit view)
