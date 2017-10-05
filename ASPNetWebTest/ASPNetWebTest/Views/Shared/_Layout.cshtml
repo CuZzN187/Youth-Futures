@@ -75,19 +75,63 @@
     </script>
 
     @*sidenav*@
-    <div class="row">
+    <div class="sidebar">
+        <p class="sidebarTitle">Editables</p>
+        <ul>
+            <li>
+                <a href="#">Font Color</a>
+                <ul>
+                    <li><a href="#">Homea</a></li>
+                    <li><a href="#">Homeb</a></li>
+                    <li><a href="#">Homec</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Font Size</a>
+                <ul>
+                    <li><a href="#">Colors</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Font Family</a>
+                <ul>
+                    <li><a href="#">Comic Sans</a></li>
+                    <li><a href="#">Wing Dings</a></li>
+                    <li><a href="#">Old English</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Images</a></li>
+                <ul>
+                    <li><a href="#">Insert Image Here</a></li>
+                </ul>
+            <li>
+                <a href="#">Styles</a>
+                <ul>
+                    <li><a href="#">Bold</a></li>
+                    <li><a href="#">Italics</a></li>
+                    <li><a href="#">Underline</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    @*<div class="row">
         <div class="col-md-2 col-sm-4 sidebar1">
                 <ul class="list">
                     <p class="sidebartitle">Editables</p>
-                    <li>Font Color</li>
-                    <li>Font Size</li>
-                    <li>Font Family</li>
-                    <li>Bold</li>
-                    <li>Italics</li>
-                    <li>Images</li>
+                    <li><a href="">Font Color</a></li>
+                    <ul class="fontSubMenu">
+                        <li>
+                            <a href="">test</a>
+                        </li>
+                    </ul>
+                    <li><a href="">Font Size</a></li>
+                    <li><a href="">Font Family</a></li>
+                    <li><a href="">Bold</a></li>
+                    <li><a href="">Italics</a></li>
+                    <li><a href="">Images</a></li>
                 </ul>
             </div>
-    </div>
+    </div>*@
 
         <div class="container body-content">
             @RenderBody()
