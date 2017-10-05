@@ -24,49 +24,8 @@
 </head>
 
 <body>
-    <script type="text/javascript">
-        //function for edit button - on and off
-        function myFunction() {
-            var editor = document.getElementById("edits");
-            var button = document.getElementById("editBtnEdit");
-            var coloring = document.getElementById("color");
-
-            //allowing editing of all texts/links
-            if (editor.isContentEditable) {
-                editor.contentEditable = 'false';
-                button.style.backgroundColor = "#F96";
-                button.innerHTML = 'Enable Editing';
-                document.designMode = "off";
-            } else {
-                editor.contentEditable = 'true';
-                button.style.backgroundColor = "#6F9";
-                button.innerHTML = 'Save Changes';
-                document.designMode = "on";
-            }
-        }
-        //function for bold - double click to bold -- for now
-        function Bold() {
-            document.execCommand('bold', false, null);
-        }
-    </script>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2 col-sm-4 sidebar1">
-                <div class="left-navigation">
-                    <ul class="list">
-                        <h5><strong>Editables</strong></h5>
-                        <li>Font Color</li>
-                        <li>Font Size</li>
-                        <li>Font Family</li>
-                        <li>Bold</li>
-                        <li>Italics</li>
-                        <li>Images</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div id="main-body">
-            <div id="edits" contenteditable="false" onmouseup="Bold();">
+        <div id="main-body" contenteditable="false">
+            <div id="edits" onmouseup="Bold();">
                 <div>
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div>
