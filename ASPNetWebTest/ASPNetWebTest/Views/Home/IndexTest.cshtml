@@ -23,25 +23,33 @@
 </head>
 
 <body>
-    <script>
+    <script type="text/javascript">
+        //function for edit button - on and off
         function myFunction() {
             var editor = document.getElementById("edits");
             var button = document.getElementById("editBtnEdit");
+            var coloring = document.getElementById("color");
 
+            //allowing editing of all texts/links
             if (editor.isContentEditable) {
                 editor.contentEditable = 'false';
                 button.style.backgroundColor = "#F96";
                 button.innerHTML = 'Enable Editing';
+                document.designMode = "off";
             } else {
                 editor.contentEditable = 'true';
                 button.style.backgroundColor = "#6F9";
                 button.innerHTML = 'Save Changes';
+                document.designMode = "on";
             }
         }
+        //function for bold - double click to bold -- for now
+        function Bold() {
+            document.execCommand('bold', false, null);
+        }
     </script>
-    
     <div id="main-body">
-        <div id="edits" contenteditable="false">
+        <div id="edits" contenteditable="false" onmouseup="Bold();">
         <div>
             <!-- Brand and toggle get grouped for better mobile display -->
             <div>
@@ -83,7 +91,7 @@
         <section class="container-fluid services">
             <div class="row">
                 <div class="col-xs-12">
-                    <h4 class="services-heading">Services</h4>
+                    <h4 class="services-heading" onclick="document.execCommand('foreColor', false, 'blue');">Services</h4>
                     <p class="mont-light-light-22 about-services">Our programming is divided into three main areas. Each program area has specific components to meet the needs of the youth in need.</p>
                 </div>
             </div>
