@@ -25,15 +25,15 @@
 <body>
     <script>
         function myFunction() {
-            var tester = document.getElementById("test");
+            var editor = document.getElementById("edits");
             var button = document.getElementById("editBtnEdit");
 
-            if (tester.isContentEditable) {
-                tester.contentEditable = 'false';
+            if (editor.isContentEditable) {
+                editor.contentEditable = 'false';
                 button.style.backgroundColor = "#F96";
                 button.innerHTML = 'Enable Editing';
             } else {
-                tester.contentEditable = 'true';
+                editor.contentEditable = 'true';
                 button.style.backgroundColor = "#6F9";
                 button.innerHTML = 'Save Changes';
             }
@@ -41,6 +41,7 @@
     </script>
     
     <div id="main-body">
+        <div id="edits" contenteditable="false">
         <div>
             <!-- Brand and toggle get grouped for better mobile display -->
             <div>
@@ -60,10 +61,10 @@
             <div class="row">
                 <div class="col-xs-12 header-box">
                     <div class="row">
-                        <p id="pHi" class="header-text-greeting col-xs-12" contenteditable="false">Hi</p>
+                        <p class="header-text-greeting col-xs-12">Hi</p>
                     </div>
                     <div class="sub-text-box row">
-                        <p id="pBeds" onclick="loadBeds()" class="sub-text col-xs-12" contenteditable="false">14 WARM BEDS. YOUTH 12-17. YOUR TEMPORARY HOME <span class="quicksand-dark-38-lightgreen">:) </span></p>
+                        <p class="sub-text col-xs-12">14 WARM BEDS. YOUTH 12-17. YOUR TEMPORARY HOME <span class="quicksand-dark-38-lightgreen">:) </span></p>
                     </div>
                 </div>
             </div>
@@ -71,7 +72,7 @@
         <section id="header">
             <div class="row">
                 <div class="col-xs-offset-1 col-xs-11">
-                    <p id="pContact" class="green-header" contenteditable="false">
+                    <p class="green-header">
                         <span class="mont-semibold-dark-36 have-questions-heading">Have questions? Send us a text!</span>
                         <span class="quicksand-dark-36-main"> (801) 528-1214</span>
                     </p>
@@ -82,8 +83,8 @@
         <section class="container-fluid services">
             <div class="row">
                 <div class="col-xs-12">
-                    <h4 class="services-heading" contenteditable="false">Services</h4>
-                    <p class="mont-light-light-22 about-services" contenteditable="false">Our programming is divided into three main areas. Each program area has specific components to meet the needs of the youth in need.</p>
+                    <h4 class="services-heading">Services</h4>
+                    <p class="mont-light-light-22 about-services">Our programming is divided into three main areas. Each program area has specific components to meet the needs of the youth in need.</p>
                 </div>
             </div>
             <div class="row">
@@ -107,7 +108,7 @@
                             <img src="~/resources/door_icon.png" alt="Door" class="panel-img" />
                         </section>
                         <section>
-                            <p id="test" class="quicksand-light-32 panel-heading" contenteditable="false">Drop-in Services</p>
+                            <p class="quicksand-light-32 panel-heading">Drop-in Services</p>
                         </section>
                         <section>
                             <p class="mont-light-light-18 panel-summary">Available to any youth ages 12-18. Drop-in services allow for the youth to access food, clothing, hygiene items, laundry facilities, computer stations, and case management. Drop-in hours are 6:30 am to 8:00 pm every day of the week.</p>
@@ -219,7 +220,7 @@
                 </div>
             </section>
         </article>
-
+            </div>
         <footer class="container-fluid">
             <div class="row clear">
                 <section class="col-xs-6 col-sm-4 col-md-2 footer-section">
