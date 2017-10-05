@@ -32,6 +32,9 @@
     /* Standard syntax */
     padding: 0px;
     min-height: 100%;
+    position: fixed;
+    float:left;
+    right:0px;
 }
 
 .list {
