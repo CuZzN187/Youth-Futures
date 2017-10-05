@@ -185,8 +185,16 @@
     <Content Include="resources\calendar_icon%403x.png" />
     <Content Include="resources\calendar_icon.png" />
     <Content Include="resources\hand.png" />
+    <Content Include="resources\history_5000.jpg" />
+    <Content Include="resources\history_hand.svg" />
     <Content Include="resources\history_header.jpg" />
+    <Content Include="resources\history_house.svg" />
+    <Content Include="resources\history_kristen.jpg" />
+    <Content Include="resources\history_kristen_scott.jpg" />
+    <Content Include="resources\history_meal.svg" />
+    <Content Include="resources\history_shelter.jpg" />
     <Content Include="resources\IG.png" />
+    <Content Include="resources\media_check.jpg" />
     <Content Include="resources\outreach%402x.png" />
     <Content Include="resources\outreach%403x.png" />
     <Content Include="resources\outreach.png" />
@@ -209,6 +217,9 @@
     <Content Include="resources\page-1%402x.png" />
     <Content Include="resources\page-1%403x.png" />
     <Content Include="resources\page-1.png" />
+    <Content Include="resources\staff_alyson.jpg" />
+    <Content Include="resources\staff_justine.jpg" />
+    <Content Include="resources\staff_susan.jpg" />
     <Content Include="resources\street-outreach-header%402x.png" />
     <Content Include="resources\street-outreach-header%403x.png" />
     <Content Include="resources\street-outreach-header.png" />
