@@ -30,23 +30,25 @@ function eventLoader() {
     }
 }
 
-function loadBigHi() {
-    document.getElementById("elementName").children[1].innerHTML = "HI";
-    document.getElementById("elementAttr1").children[1].innerHTML = "quicksand-bold";
-    document.getElementById("elementAttr2").children[1].innerHTML = "rgb(255, 255, 255)";
-    document.getElementById("elementAttr3").children[1].innerHTML = "214px";
-}
+function myFunction() {
+    var editor = document.getElementById("main-body");
+    var button = document.getElementById("editBtnEdit");
+    var coloring = document.getElementById("color");
 
-function loadBeds() {
-    document.getElementById("elementName").children[1].innerHTML = "14 WARM BEDS. YOUTH 12-17. YOUR TEMPORARY HOME";
-    document.getElementById("elementAttr1").children[1].innerHTML = "quicksand-bold";
-    document.getElementById("elementAttr2").children[1].innerHTML = "rgb(71, 71, 71)";
-    document.getElementById("elementAttr3").children[1].innerHTML = "38px";
+    //allowing editing of all texts/links
+    if (editor.isContentEditable) {
+        editor.contentEditable = 'false';
+        button.style.backgroundColor = "#F96";
+        button.innerHTML = 'Enable Editing';
+        document.designMode = "off";
+    } else {
+        editor.contentEditable = 'true';
+        button.style.backgroundColor = "#6F9";
+        button.innerHTML = 'Save Changes';
+        document.designMode = "on";
+    }
 }
-
-function loadContact() {
-    document.getElementById("elementName").children[1].innerHTML = "Have questions? Send us a text!";
-    document.getElementById("elementAttr1").children[1].innerHTML = "montserrat-semibold";
-    document.getElementById("elementAttr2").children[1].innerHTML = "rgb(255, 255, 255)";
-    document.getElementById("elementAttr3").children[1].innerHTML = "36px";
+//function for bold - double click to bold -- for now
+function Bold() {
+    document.execCommand('bold', false, null);
 }
