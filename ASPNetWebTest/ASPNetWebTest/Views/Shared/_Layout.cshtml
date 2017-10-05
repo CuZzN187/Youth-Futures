@@ -21,6 +21,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><img src="~/resources/yf_logo.svg" alt="Youth Futures Logo" /></li>
+                    <li>@Html.ActionLink("Mi Casa", "IndexTest", "Home")</li>
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Programs", "Programs", "Home")</li>
                     <li>@Html.ActionLink("Get Involved", "Involved", "Home")</li>
@@ -28,8 +29,6 @@
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Donate", "Donate", "Home")</li>
                     <li><a onclick="document.getElementById('id01').style.display='block'">Login</a></li>
-
-
                 </ul>
             </div>
         </div>
@@ -59,6 +58,7 @@
         </form>
     </div>
 
+
     <script>
         // Get the modal
         var modal = document.getElementById('id01');
@@ -70,8 +70,9 @@
             }
         }
     </script>
+
     
-        <div id="toggleView" onclick="toggleView()"></div>
+        @*<div id="toggleView" onclick="toggleView()"></div>
             <div style="visibility:visible" id="attributeViewBox">
                 <div class="attrView" id="elementName">
                     <div class="attrName">Text</div>
@@ -90,7 +91,7 @@
                     <div class="attrValue">14px</div>
                 </div>
                 <button style="visibility:visible" id="btnSubmit">Submit</button>
-            </div>
+            </div>*@
 
         <div class="container body-content">
             @RenderBody()

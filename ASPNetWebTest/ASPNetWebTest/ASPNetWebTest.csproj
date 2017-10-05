@@ -270,6 +270,7 @@
     <Content Include="Views\ErrorLogs\Details.cshtml" />
     <Content Include="Views\ErrorLogs\Edit.cshtml" />
     <Content Include="Views\ErrorLogs\Index.cshtml" />
+    <Content Include="Views\Home\IndexTest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
