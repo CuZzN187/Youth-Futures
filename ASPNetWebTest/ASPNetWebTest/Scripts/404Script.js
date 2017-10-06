@@ -37,11 +37,13 @@ function myFunction() {
 
     //allowing editing of all texts/links
     if (editor.isContentEditable) {
+        document.getElementsByClassName("sidebar")[0].style.width = "0";
         editor.contentEditable = 'false';
         button.style.backgroundColor = "#F96";
         button.innerHTML = 'Enable Editing';
         document.designMode = "off";
     } else {
+        document.getElementsByClassName("sidebar")[0].style.width = "250px";
         editor.contentEditable = 'true';
         button.style.backgroundColor = "#6F9";
         button.innerHTML = 'Save Changes';

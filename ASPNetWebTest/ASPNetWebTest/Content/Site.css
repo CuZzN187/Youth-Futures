@@ -14,7 +14,25 @@
     min-height: 100%;
     position: fixed;
     float: left;
-    width: 10%;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+/*use this to push the page to the right*/
+#main-body{
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/*for smaller screens*/
+@media screen and (max-height: 450px){
+    .sidebar {padding-top: 15px;}
+    .sidebar ul li a {font-size: 18px;}
 }
 
 .sidebarTitle {
@@ -60,7 +78,7 @@
     .sidebar ul ul {
         position: absolute;
         visibility: hidden;
-        top: 27px;
+        top: 0px;
     }
 
     .sidebar ul li:hover ul {
@@ -78,6 +96,7 @@
     .sidebar a:hover {
         font-weight: bold;
     }
+    /*END OF SIDEBAR CSS*/
 
 @font-face {
     font-family: 'montserrat-light';
