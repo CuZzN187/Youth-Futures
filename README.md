@@ -9,24 +9,23 @@ CS3750 MILESTONE 2
 	• Secondary pages
 		○ Pages 
 			○ Programs FINISHED!
-				○ edit page - Street Outreach (Robb) - FINISHED!
+				○ edit page - Street Outreach (Robb) - FINISHED
 			○ Get Involved
-				○ edit page - Donate, Events, Donor Recognition (Robb)
+				○ edit page - Events: Google calendar (Juan)
 			○ About Us
 				○ edit page - History, Staff, Board, Media - (Juan) - FINISHED
 			○ Contact FINISHED!
-				○ edit page - contact info (Juan) - FINISHED!
+				○ edit page - contact info (Juan) - FINISHED
 			○ Donate
-				○ edit page (SaBree) - Styling CSS needed
+				○ edit page (SaBree) - FINISHED
 		○ Links to pages (Robb) - FINISHED!
 		○ Polish
 	• Main page (Edit view)
 		○ Side edit NAV bar (Bradley)
 		○ Login requirement (Robb) - FINISHED!
-		○ Merge all CSS (SaBree)
+		○ Merge all CSS (SaBree) - FINISHED
 	• SRS Updates 
 		○ Logging errors (Brad)
-    We should do this last
 
 Brad:
 <br/>
