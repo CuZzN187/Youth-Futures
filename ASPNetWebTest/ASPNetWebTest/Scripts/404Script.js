@@ -30,6 +30,7 @@ function eventLoader() {
     }
 }
 
+//a function
 function myFunction() {
     var editor = document.getElementById("main-body");
     var button = document.getElementById("editBtnEdit");
