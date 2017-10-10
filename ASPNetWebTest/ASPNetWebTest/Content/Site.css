@@ -26,7 +26,7 @@
 /*use this to push the page to the right*/
 #main-body{
     transition: margin-left .5s;
-    padding: 20px;
+    padding: 0px;
 }
 
 /*for smaller screens*/
@@ -486,13 +486,13 @@ h1, h2, h4, h6 {
 .sub-text-box {
     background-color: #FFF;
     min-height: 104px;
-    max-width: 591px;
+    max-width: 575px;
     padding: 7px 66px 11px 1px;
 }
 
     .sub-text-box > .sub-text {
         font-family: quicksand-bold;
-        font-size: 38px;
+        font-size: 36px;
         letter-spacing: -2px;
         color: #474747;
         line-height: 43px;
@@ -548,7 +548,7 @@ footer {
 }
 
 .container-fluid {
-    margin-top: -1px;
+    margin-top: 0px;
 }
 
 footer .row {
@@ -874,7 +874,7 @@ footer .row {
 }
 
 .purpose-box {
-    margin-right: -15px;
+    margin-right: 0px;
     border: 0;
 }
 
