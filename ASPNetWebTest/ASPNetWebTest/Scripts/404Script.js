@@ -56,3 +56,19 @@ function myFunction() {
 function Bold() {
     document.execCommand('bold', false, null);
 }
+
+function addStaff() {
+    var insertedElement = document.createElement("SECTION");
+    insertedElement.setAttribute("class", "col-xs-12 col-md-4");
+
+    var staffName = document.createTextNode("new Staff Name");
+    staffName.className = "name";
+
+    var staffBio = document.createTextNode("Testing texting");
+    insertedElement.appendChild(staffName);
+    insertedElement.appendChild(staffBio);
+
+    var staff = document.getElementsByClassName("board_members");
+    console.log(staff);
+    staff[1].appendChild(insertedElement);
+}
