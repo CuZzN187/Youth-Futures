@@ -17,27 +17,10 @@
     <link rel="stylesheet" href="~/Content/Site.css" type="text/css" />
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="404Script.js"></script>
 
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-
-    </script>
-
-    <script>
-        function addStaff() {
-            var insertedElement = document.createElement("SECTION");
-            insertedElement.setAttribute("class", "col-xs-12 col-md-4");
-            var staffName = document.createTextNode("new Staff Name");
-            staffName.className = "name";
-            var staffBio = document.createTextNode("Testing texting");
-            insertedElement.appendChild(staffName);
-            insertedElement.appendChild(staffBio);
-            var staff = document.getElementsByClassName("board_members");
-            console.log(staff);
-            staff[1].appendChild(insertedElement);
-        }
-    </script>
 </head>
 <body>
     <div id="main-body" contenteditable="false">
@@ -241,7 +224,6 @@
                     </div>
 
                 </div>
-                <button type="button" onclick="addStaff()">ADD NEW STAFF</button>
             </div>
             <div class="container-fluid">
 
@@ -264,7 +246,7 @@
 
                         <p><span class="name">ALYSON DEUSSEN</span><br>Floor Staff Co-Lead, Youth Futures<br>Ouelessebougou Utah Alliance<br><span class="email">aallred@yfut.org</span></p>
                     </section>
-
+                    <button type="button" onclick="addStaff()">ADD NEW STAFF</button>
                 </div>
 
             </div>
