@@ -23,6 +23,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 
     </script>
+
+    <script>
+        function addStaff() {
+            var insertedElement = document.createElement("SECTION");
+            insertedElement.setAttribute("class", "col-xs-12 col-md-4");
+            var staffName = document.createTextNode("new Staff Name");
+            staffName.className = "name";
+            var staffBio = document.createTextNode("Testing texting");
+            insertedElement.appendChild(staffName);
+            insertedElement.appendChild(staffBio);
+            var staff = document.getElementsByClassName("board_members");
+            console.log(staff);
+            staff[1].appendChild(insertedElement);
+        }
+    </script>
 </head>
 <body>
     <div id="main-body" contenteditable="false">
@@ -226,7 +241,7 @@
                     </div>
 
                 </div>
-
+                <button type="button" onclick="addStaff()">ADD NEW STAFF</button>
             </div>
             <div class="container-fluid">
 
