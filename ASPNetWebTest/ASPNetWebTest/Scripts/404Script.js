@@ -64,11 +64,14 @@ function addStaff() {
     var staffName = document.createTextNode("new Staff Name");
     staffName.className = "name";
 
-    var staffBio = document.createTextNode("Testing texting");
+    var staffBio = document.createTextNode("Testing texting a series of sentences strung together to show how the" +
+        "program works when information spans a large distance lorem ipsum modus veli cassus beli et tu brute");
     insertedElement.appendChild(staffName);
     insertedElement.appendChild(staffBio);
 
     var staff = document.getElementsByClassName("board_members");
-    console.log(staff);
+
+    //document.getElementById("btnAddStaff").insertBefore(insertedElement, staff[1].childNodes.length);
+    
     staff[1].appendChild(insertedElement);
 }
