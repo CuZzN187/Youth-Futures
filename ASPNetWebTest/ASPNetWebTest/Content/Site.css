@@ -710,7 +710,8 @@ footer .row {
 }
 
     .boxes > .panel {
-        margin-right: 47px;
+        margin-right: 25px;
+        margin-left: 25px;
         min-width: 330px;
         min-height: 594px;
         background-color: #FFF;
@@ -1538,7 +1539,7 @@ span.psw {
 
 .donor_list {
 	background-color: white;
-	padding-left: 5%;
+	padding-left: 30px;
 }
 
 .donor_subheader {
@@ -1556,7 +1557,7 @@ span.psw {
 
 .col-xs-4.donor_box {
 	height: 120px;
-	width: 369px;
+	width: 350px;
 	margin: .5%;
 }
 
