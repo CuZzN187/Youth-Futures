@@ -43,13 +43,14 @@ function myFunction() {
         editor.contentEditable = 'false';
         button.style.backgroundColor = "#F96";
         button.innerHTML = 'Enable Editing';
-        document.designMode = "off";
+        //document.designMode = "off";
     } else {
         document.getElementsByClassName("sidebar")[0].style.width = "250px";
         editor.contentEditable = 'true';
+        document.getElementById("sideEdit").contentEditable = "false";
         button.style.backgroundColor = "#6F9";
         button.innerHTML = 'Save Changes';
-        document.designMode = "on";
+        //document.designMode = "on";
     }
 }
 //function for bold - double click to bold -- for now
