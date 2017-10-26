@@ -1,4 +1,4 @@
-# Youth-Futures - ANNOUNCEMENTS
+﻿# Youth-Futures - ANNOUNCEMENTS
 CS3750 MILESTONE 3
 
 	• Main page
@@ -35,7 +35,7 @@ CS3750 MILESTONE 3
 				○ Pending
 				○ Donate page can be edited/updated
 					○ Pending
-				○ New staff members and donors can be added and are populated dynamically on their respective area/page
+				○ New staff members and donors can be added and are populated dynamically on their respective area/page (Brad)
 					○ Pending
 		○ Polish - Pending
 		
