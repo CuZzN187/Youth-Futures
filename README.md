@@ -4,28 +4,34 @@ CS3750 MILESTONE 3
 	• Main page
 		○ Main page needs data displayed through the database
 				○ Pending
+				○ Assign IDs or class (Juan)
 				○ Main page can be edited/updated
 					○ Pending
 		○ Polish - Pending
 	• Secondary pages 
 		○ Pages needs data displayed through the database
 			○ Programs
+				○ Assign IDs or class (Juan)
 				○ Pending
 				○ Programs page can be edited/updated
 					○ Pending
 			○ Get Involved
+				○ Assign IDs or class (Juan)
 				○ Pending
 				○ Get Involved page can be edited/updated
 					○ Pending
 			○ About Us
+				○ Assign IDs or class (Juan)
 				○ Pending
 				○ About Us page can be edited/updated
 					○ Pending
 			○ Contact
+				○ Assign IDs or class (Juan)
 				○ Pending
 				○ Contact page can be edited/updated
 					○ Pending
 			○ Donate
+				○ Assign IDs or class (Juan)
 				○ Pending
 				○ Donate page can be edited/updated
 					○ Pending
