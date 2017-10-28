@@ -9,19 +9,18 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    
-    <div style="background-color:#9ec54d; font-size: 1.25em; color: black; width:1170px; margin:auto; border:0 0 0 0;" class="navbar navbar-inverse navbar-fixed-top">
+    <div style="background-color:#9ec54d; display:inline; font-size: 1.25em; color: black; width:auto; height:auto; margin:auto;" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
+                <img src="~/resources/yf_logo.svg" alt="Youth Futures Logo" />
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse" style="vertical-align:middle">
                 <ul class="nav navbar-nav">
-                    <li><img src="~/resources/yf_logo.svg" alt="Youth Futures Logo" /></li>
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Programs", "Programs", "Home")</li>
                     <li>@Html.ActionLink("Get Involved", "Involved", "Home")</li>
