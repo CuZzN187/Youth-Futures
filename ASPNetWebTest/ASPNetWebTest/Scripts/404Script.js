@@ -79,7 +79,6 @@ function addStaff() {
 }
 
 function getPageHtml() {
-    console.log("ran");
     var page = document.getElementsByTagName("html")[0].innerHTML;
     console.log(page);
 }
