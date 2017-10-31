@@ -39,6 +39,7 @@ function myFunction() {
 
     //allowing editing of all texts/links
     if (editor.isContentEditable) {
+        getPageHtml();
         document.getElementsByClassName("sidebar")[0].style.width = "0";
         editor.contentEditable = 'false';
         button.style.backgroundColor = "#F96";
@@ -75,4 +76,10 @@ function addStaff() {
     //document.getElementById("btnAddStaff").insertBefore(insertedElement, staff[1].childNodes.length);
     
     staff[1].appendChild(insertedElement);
+}
+
+function getPageHtml() {
+    console.log("ran");
+    var page = document.getElementsByTagName("html")[0].innerHTML;
+    console.log(page);
 }
