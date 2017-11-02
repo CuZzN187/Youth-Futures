@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System.Data.Entity;
 
 namespace ASPNetWebTest.Models {
     public class ErrorLog {
@@ -15,9 +14,5 @@ namespace ASPNetWebTest.Models {
 
         //foreign key
         public int UserID { get; set; }
-    }
-
-    public class ErrorLogContext : DbContext {
-        public DbSet<ErrorLog> errors { get; set; }
     }
 }

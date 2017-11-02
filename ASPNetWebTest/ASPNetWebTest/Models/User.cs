@@ -21,8 +21,4 @@ namespace ASPNetWebTest.Models {
         public DateTime UserDateRequested { get; set; }
         public bool UserIsApproved { get; set; }
     }
-
-    public class UserDataContext : DbContext {
-        public DbSet<User> user { get; set; }
-    }
 }
