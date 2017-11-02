@@ -50,8 +50,7 @@ namespace ASPNetWebTest.Controllers {
             return View();
         }
 
-        public ActionResult Login()
-        {
+        public ActionResult Login() { 
             ViewBag.Message = "THIS IS THE LOG IN PAGE!";
             //add ur code
             return View();
