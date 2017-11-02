@@ -962,7 +962,7 @@ footer .row {
 *       Media Queries:            *
 
 **********************************/
-@media (max-width: 90%) {
+@media (max-width: 1320px) {
     .navbar-header {
         float: none;
     }
