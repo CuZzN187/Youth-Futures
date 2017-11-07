@@ -986,9 +986,9 @@ footer .row {
     }
 
         .navbar-collapse.collapse {
-            /*display: none !important;*/
+            display: none !important;
             position: relative;
-            display: inline-block;
+            /*display: inline-block;*/
         }
 
     .navbar-nav {
