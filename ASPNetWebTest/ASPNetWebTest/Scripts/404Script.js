@@ -79,6 +79,11 @@ function addStaff() {
 }
 
 function getPageHtml() {
+    //gets the html of the current page and puts it into the page variable
     var page = document.getElementsByTagName("html")[0].innerHTML;
     console.log(page);
+}
+
+function getModalName() {
+    console.log(document.getElementsByTagName("input")[0].value);
 }

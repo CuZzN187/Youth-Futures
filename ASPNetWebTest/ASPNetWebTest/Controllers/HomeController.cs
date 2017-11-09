@@ -14,11 +14,10 @@ namespace ASPNetWebTest.Controllers {
         //will need to make a static log class
 
         public ActionResult Index() {
-
-            log.Debug("Debug Message");
-            log.Warn("Warn Message");
-            log.Error("Error Message");
-            log.Fatal("Fatal Message");
+            //log.Debug("Debug Message");
+            //log.Warn("Warn Message");
+            //log.Error("Error Message");
+            //log.Fatal("Fatal Message");
             return View();
         }
 
