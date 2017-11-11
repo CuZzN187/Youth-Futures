@@ -36,7 +36,6 @@ function myFunction() {
     var editor = document.getElementById("main-body");
     var button = document.getElementById("editBtnEdit");
     var coloring = document.getElementById("color");
-
     //allowing editing of all texts/links
     if (editor.isContentEditable) {
         getPageHtml();
@@ -45,6 +44,7 @@ function myFunction() {
         button.style.backgroundColor = "#F96";
         button.innerHTML = 'Enable Editing';
         //document.designMode = "off";
+        savePageToDB();
     } else {
         document.getElementsByClassName("sidebar")[0].style.width = "250px";
         editor.contentEditable = 'true';
@@ -80,10 +80,28 @@ function addStaff() {
 
 function getPageHtml() {
     //gets the html of the current page and puts it into the page variable
-    var page = document.getElementsByTagName("html")[0].innerHTML;
-    console.log(page);
+    var page = document.getElementsByTagName("body")[0].innerHTML;// inner body
+    return page;
+}
+
+function savePageToDB() {
+    var bodyHTML = getPageHtml();
+    //TODO: get page name to save
+    //TODO: save to db
 }
 
 function getModalName() {
     console.log(document.getElementsByTagName("input")[0].value);
+}
+
+// Places the html inside the body tag
+function PostPageByID(id){
+    var query = null;
+    if (Number.isInteger(id)) {
+        query = "SELECT PageHtml FROM dbo.Page WHERE PageID = " + id;
+    }
+
+    
+
+    document.getElementsByTagName("body")[0].innerHTML = "";
 }
