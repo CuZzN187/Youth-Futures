@@ -80,14 +80,48 @@ function addStaff() {
 
 function getPageHtml() {
     //gets the html of the current page and puts it into the page variable
-    var page = document.getElementsByTagName("body")[0].innerHTML;// inner body
+    var page = document.getElementById("main-body").outerHTML.toString();
     return page;
+}
+
+function getPageIndex() {
+    var url = document.URL;
+    var index = 1;
+    if (url.includes("Home/Programs")) {
+        index = 2;
+    }
+    else if (url.includes("Home/Involved")) {
+        // Not editable yet....
+        // Index 6..
+        index = 0;
+    }
+    else if (url.includes("Home/About")) {
+        index = 3;
+    }
+    else if (url.includes("Home/Contact")) {
+        index = 4;
+    }
+    else if (url.includes("Home/Donate")) {
+        index = 5;
+    }
+    return index;
 }
 
 function savePageToDB() {
     var bodyHTML = getPageHtml();
-    //TODO: get page name to save
+    var index = getPageIndex();
     //TODO: save to db
+    if (index != 0) {
+        $.post("",
+        {
+            html: bodyHTML.toString()
+        },
+        function (data, status) {
+        });
+    }
+    else {
+        alert("ERROR");
+    }
 }
 
 function getModalName() {
@@ -96,12 +130,9 @@ function getModalName() {
 
 // Places the html inside the body tag
 function PostPageByID(id){
-    var query = null;
-    if (Number.isInteger(id)) {
-        query = "SELECT PageHtml FROM dbo.Page WHERE PageID = " + id;
-    }
-
-    
-
-    document.getElementsByTagName("body")[0].innerHTML = "";
+    //var query = null;
+    //if (Number.isInteger(id)) {
+    //    query = "SELECT PageHtml FROM dbo.Page WHERE PageID = " + id;
+    //}
+    //document.getElementsByTagName("body")[0].innerHTML = "";
 }

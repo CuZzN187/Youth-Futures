@@ -1,6 +1,7 @@
 ﻿using System.Web.Mvc;
 using log4net;
 using ASPNetWebTest.Models;
+using System.Threading.Tasks;
 
 namespace ASPNetWebTest.Controllers {
     //controller files must end with 'Controller'
@@ -49,6 +50,57 @@ namespace ASPNetWebTest.Controllers {
         }
         // .......
         public ActionResult Login() {
+            return View();
+        }
+
+        // POST: /
+        [HttpPost, ValidateInput(false)]
+        public ActionResult Index(string html)
+        {
+            pageDB.Pages.Find(1).PageHtml = html;
+            pageDB.SaveChanges();
+            ViewBag.HTMLContent = pageDB.Pages.Find(1).PageHtml;// Get page html from DB & and display
+            return View();
+        }
+        // Post: Programs page
+        [HttpPost, ValidateInput(false)]
+        public ActionResult Programs(string html)
+        {
+            pageDB.Pages.Find(2).PageHtml = html;
+            pageDB.SaveChanges();
+            ViewBag.HTMLContent = pageDB.Pages.Find(2).PageHtml;// Get page html from DB & and display
+            return View();
+        }
+
+        // Post: Involved, not pulling yet....... THIS WILL BE INDEX 6
+
+        // Post: About page
+        [HttpPost, ValidateInput(false)]
+        public ActionResult About(string html)
+        {
+            pageDB.Pages.Find(3).PageHtml = html;
+            pageDB.SaveChanges();
+            ViewBag.HTMLContent = pageDB.Pages.Find(3).PageHtml;// Get page html from DB & and display
+            return View();
+        }
+
+        // Post: Contact
+        [HttpPost, ValidateInput(false)]
+        public ActionResult Contact(string html)
+        {
+            pageDB.Pages.Find(4).PageHtml = html;
+            pageDB.SaveChanges();
+            ViewBag.HTMLContent = pageDB.Pages.Find(4).PageHtml;// Get page html from DB & and display
+            return View();
+        }
+
+        // Post: Donate
+        [HttpPost, ValidateInput(false)]
+        public ActionResult Donate(string html)
+        {
+            pageDB.Pages.Find(5).PageHtml = html;
+            pageDB.SaveChanges();
+            ViewBag.HTMLContent = pageDB.Pages.Find(5).PageHtml;// Get page html from DB & and display
             return View();
         }
     }
