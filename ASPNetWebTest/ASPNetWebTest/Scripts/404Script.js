@@ -126,6 +126,90 @@ function addDirector() {
     staff[0].appendChild(insertedSection);
 }
 
+function addPlatDonor() {
+    var platCnt = document.getElementsByClassName("plat").length;
+    var platDonors = document.getElementsByClassName("plat")[platCnt];
+
+    var insertedDonor = document.createElement("DIV");
+    insertedDonor.setAttribute("class", "col-xs-4");
+    insertedDonor.className += "donor_box";
+    insertedDonor.className += "plat";
+
+    var donorName = document.createElement("P");
+    donorName.setAttribute("class", "donor_name");
+
+    var donorYear = document.createElement("P");
+    donorYear.setAttribute("class", "year");
+
+    insertedDonor.appendChild(donorName);
+    insertedDonor.appendChild(donorYear);
+    
+    platDonors.appendChild(insertedDonor);
+}
+
+function addGoldDonor() {
+    var goldCnt = document.getElementsByClassName("gold").length;
+    var goldDonors = document.getElementsByClassName("gold")[platCnt];
+
+    var insertedDonor = document.createElement("DIV");
+    insertedDonor.setAttribute("class", "col-xs-4");
+    insertedDonor.className += "donor_box";
+    insertedDonor.className += "gold";
+
+    var donorName = document.createElement("P");
+    donorName.setAttribute("class", "donor_name");
+
+    var donorYear = document.createElement("P");
+    donorYear.setAttribute("class", "year");
+
+    insertedDonor.appendChild(donorName);
+    insertedDonor.appendChild(donorYear);
+
+    goldDonors.appendChild(insertedDonor);
+}
+
+function addSilverDonor() {
+    var silverCnt = document.getElementsByClassName("silver").length;
+    var silverDonors = document.getElementsByClassName("silver")[platCnt];
+
+    var insertedDonor = document.createElement("DIV");
+    insertedDonor.setAttribute("class", "col-xs-4");
+    insertedDonor.className += "donor_box";
+    insertedDonor.className += "silver";
+
+    var donorName = document.createElement("P");
+    donorName.setAttribute("class", "donor_name");
+
+    var donorYear = document.createElement("P");
+    donorYear.setAttribute("class", "year");
+
+    insertedDonor.appendChild(donorName);
+    insertedDonor.appendChild(donorYear);
+
+    silverDonors.appendChild(insertedDonor);
+}
+
+function addBronzeDonor() {
+    var bronzeCnt = document.getElementsByClassName("bronze").length;
+    var bronzeDonors = document.getElementsByClassName("bronze")[platCnt];
+
+    var insertedDonor = document.createElement("DIV");
+    insertedDonor.setAttribute("class", "col-xs-4");
+    insertedDonor.className += "donor_box";
+    insertedDonor.className += "bronze";
+
+    var donorName = document.createElement("P");
+    donorName.setAttribute("class", "donor_name");
+
+    var donorYear = document.createElement("P");
+    donorYear.setAttribute("class", "year");
+
+    insertedDonor.appendChild(donorName);
+    insertedDonor.appendChild(donorYear);
+
+    bronzeDonors.appendChild(insertedDonor);
+}
+
 function getPageHtml() {
     //gets the html of the current page and puts it into the page variable
     var page = document.getElementById("main-body").outerHTML.toString();
