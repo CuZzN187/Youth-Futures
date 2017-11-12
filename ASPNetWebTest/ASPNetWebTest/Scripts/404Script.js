@@ -128,18 +128,20 @@ function addDirector() {
 
 function addPlatDonor() {
     var platCnt = document.getElementsByClassName("plat").length;
-    var platDonors = document.getElementsByClassName("plat")[platCnt];
+    var platDonors = document.getElementsByClassName("plat")[platCnt - 1].parentElement;
 
     var insertedDonor = document.createElement("DIV");
     insertedDonor.setAttribute("class", "col-xs-4");
-    insertedDonor.className += "donor_box";
-    insertedDonor.className += "plat";
+    insertedDonor.className += " donor_box";
+    insertedDonor.className += " plat";
 
     var donorName = document.createElement("P");
     donorName.setAttribute("class", "donor_name");
+    donorName.innerHTML = "DONOR NAME";
 
     var donorYear = document.createElement("P");
     donorYear.setAttribute("class", "year");
+    donorYear.innerHTML = "DONOR YEAR";
 
     insertedDonor.appendChild(donorName);
     insertedDonor.appendChild(donorYear);
@@ -149,18 +151,20 @@ function addPlatDonor() {
 
 function addGoldDonor() {
     var goldCnt = document.getElementsByClassName("gold").length;
-    var goldDonors = document.getElementsByClassName("gold")[platCnt];
+    var goldDonors = document.getElementsByClassName("gold")[goldCnt - 1].parentElement;
 
     var insertedDonor = document.createElement("DIV");
     insertedDonor.setAttribute("class", "col-xs-4");
-    insertedDonor.className += "donor_box";
-    insertedDonor.className += "gold";
+    insertedDonor.className += " donor_box";
+    insertedDonor.className += " gold";
 
     var donorName = document.createElement("P");
     donorName.setAttribute("class", "donor_name");
+    donorName.innerHTML = "DONOR NAME";
 
     var donorYear = document.createElement("P");
     donorYear.setAttribute("class", "year");
+    donorYear.innerHTML = "DONOR YEAR";
 
     insertedDonor.appendChild(donorName);
     insertedDonor.appendChild(donorYear);
@@ -170,18 +174,20 @@ function addGoldDonor() {
 
 function addSilverDonor() {
     var silverCnt = document.getElementsByClassName("silver").length;
-    var silverDonors = document.getElementsByClassName("silver")[platCnt];
+    var silverDonors = document.getElementsByClassName("silver")[silverCnt - 1].parentElement;
 
     var insertedDonor = document.createElement("DIV");
     insertedDonor.setAttribute("class", "col-xs-4");
-    insertedDonor.className += "donor_box";
-    insertedDonor.className += "silver";
+    insertedDonor.className += " donor_box";
+    insertedDonor.className += " silver";
 
     var donorName = document.createElement("P");
     donorName.setAttribute("class", "donor_name");
+    donorName.innerHTML = "DONOR NAME";
 
     var donorYear = document.createElement("P");
     donorYear.setAttribute("class", "year");
+    donorYear.innerHTML = "DONOR YEAR";
 
     insertedDonor.appendChild(donorName);
     insertedDonor.appendChild(donorYear);
@@ -191,18 +197,20 @@ function addSilverDonor() {
 
 function addBronzeDonor() {
     var bronzeCnt = document.getElementsByClassName("bronze").length;
-    var bronzeDonors = document.getElementsByClassName("bronze")[platCnt];
+    var bronzeDonors = document.getElementsByClassName("bronze")[bronzeCnt - 1].parentElement;
 
     var insertedDonor = document.createElement("DIV");
     insertedDonor.setAttribute("class", "col-xs-4");
-    insertedDonor.className += "donor_box";
-    insertedDonor.className += "bronze";
+    insertedDonor.className += " donor_box";
+    insertedDonor.className += " bronze";
 
     var donorName = document.createElement("P");
     donorName.setAttribute("class", "donor_name");
+    donorName.innerHTML = "DONOR NAME";
 
     var donorYear = document.createElement("P");
     donorYear.setAttribute("class", "year");
+    donorYear.innerHTML = "DONOR YEAR";
 
     insertedDonor.appendChild(donorName);
     insertedDonor.appendChild(donorYear);
