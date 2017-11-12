@@ -60,22 +60,70 @@ function Bold() {
 }
 
 function addStaff() {
-    var insertedElement = document.createElement("SECTION");
-    insertedElement.setAttribute("class", "col-xs-12 col-md-4");
+    var insertedSection = document.createElement("SECTION");
+    insertedSection.setAttribute("class", "col-xs-12 col-md-4");
 
-    var staffName = document.createTextNode("new Staff Name");
-    staffName.className = "name";
+    var insertedParagraph = document.createElement("P");
 
-    var staffBio = document.createTextNode("Testing texting a series of sentences strung together to show how the" +
-        "program works when information spans a large distance lorem ipsum modus veli cassus beli et tu brute");
-    insertedElement.appendChild(staffName);
-    insertedElement.appendChild(staffBio);
+    var staffPic = document.createElement("IMG");
+    staffPic.setAttribute("class", "img-responsive");
+    staffPic.setAttribute("src", "../resources/staff_alyson.jpg");
+
+    var staffName = document.createElement("SPAN");
+    staffName.setAttribute("class", "name")
+    staffName.innerHTML = "NEW STAFF NAME";
+
+    var staffTitle = document.createTextNode("STAFF TITLE");
+    var staffDesc = document.createTextNode("STAFF DESCRIPTION");
+
+    var staffEmail = document.createElement("SPAN");
+    staffEmail.innerHTML = "STAFF EMAIL";
+
+    insertedParagraph.appendChild(staffName);
+    insertedParagraph.appendChild(document.createElement("BR"));
+    insertedParagraph.appendChild(staffTitle);
+    insertedParagraph.appendChild(document.createElement("BR"));
+    insertedParagraph.appendChild(staffDesc);
+    insertedParagraph.appendChild(document.createElement("BR"));
+    insertedParagraph.appendChild(staffEmail);
+
+    insertedSection.appendChild(staffPic);
+    
+    insertedSection.appendChild(insertedParagraph);
 
     var staff = document.getElementsByClassName("board_members");
 
     //document.getElementById("btnAddStaff").insertBefore(insertedElement, staff[1].childNodes.length);
-    
-    staff[1].appendChild(insertedElement);
+    staff[1].appendChild(insertedSection);
+}
+
+function addDirector() {
+    var insertedSection = document.createElement("SECTION");
+    insertedSection.setAttribute("class", "col-xs-12 col-md-4");
+
+    var insertedParagraph = document.createElement("P");
+
+    var directorName = document.createElement("SPAN");
+    directorName.setAttribute("class", "name");
+    directorName.innerHTML = "DIRECTOR NAME";
+
+    var directorTitle = document.createTextNode("DIRECTOR TITLE");
+    var directorDesc = document.createTextNode("DIRECTOR DESCRIPTION");
+    var directorEmail = document.createElement("SPAN");
+    directorEmail.setAttribute("class", "email");
+
+    insertedParagraph.appendChild(directorName);
+    insertedParagraph.appendChild(document.createElement("BR"));
+    insertedParagraph.appendChild(directorTitle);
+    insertedParagraph.appendChild(document.createElement("BR"));
+    insertedParagraph.appendChild(directorDesc);
+    insertedParagraph.appendChild(document.createElement("BR"));
+    insertedParagraph.appendChild(directorEmail);
+
+    insertedSection.appendChild(insertedParagraph);
+
+    var staff = document.getElementsByClassName("board_members");
+    staff[0].appendChild(insertedSection);
 }
 
 function getPageHtml() {
