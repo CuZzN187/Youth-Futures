@@ -44,7 +44,8 @@ namespace ASPNetWebTest.Controllers {
             return View();
         }
         // GET: Donate
-        public ActionResult Donate() {
+        public ActionResult Donate()
+        {
             ViewBag.HTMLContent = pageDB.Pages.Find(5).PageHtml;// Get page html from DB & and display
             return View();
         }
