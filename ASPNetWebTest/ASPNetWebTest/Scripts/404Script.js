@@ -264,8 +264,28 @@ function savePageToDB() {
     }
 }
 
-function getModalName() {
-    console.log(document.getElementsByTagName("input")[0].value);
+function loginCreds() {
+    var username = $('#uname').val();
+    var password = $('#psw').val();
+    //alert(username + password);
+    var data = new Object();
+    data.username = $('#uname').val();
+    data.password = $('#psw').val();
+
+    jQuery.ajax({
+        type: "POST",
+        url: "Home/Login",
+        dataType: "json",
+        contentType: "application/json; charset=utf=8",
+        data: JSON.stringify({ data }),
+        success: function (data) {
+            alert(data);
+        },
+        failure: function (errMsg) {
+            alert(errMsg);
+        }
+
+    })
 }
 
 // Places the html inside the body tag
