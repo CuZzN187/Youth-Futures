@@ -68,7 +68,7 @@ namespace ASPNetWebTest.Controllers {
                 //invalid creds
             }
             return View();
-        }
+            }
 
         // POST: /
         [HttpPost, ValidateInput(false)]

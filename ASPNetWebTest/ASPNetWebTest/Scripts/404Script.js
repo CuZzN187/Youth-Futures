@@ -277,7 +277,7 @@ function loginCreds() {
         url: "Home/Login",
         dataType: "json",
         contentType: "application/json; charset=utf=8",
-        data: JSON.stringify({ data }),
+        data: JSON.stringify({ username, password }),
         success: function (data) {
             alert(data);
         },
