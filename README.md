@@ -1,77 +1,44 @@
 ﻿# Youth-Futures - ANNOUNCEMENTS
-CS3750 MILESTONE 3
+CS3750 MILESTONE 4
 
-	• Main page
-		○ Main page needs data displayed through the database
-				○ Pending
-				○ Assign IDs or class (Juan)
-				○ Main page can be edited/updated
-					○ Pending
-		○ Polish - Pending
-	• Secondary pages 
-		○ Pages needs data displayed through the database
-			○ Programs
-				○ Assign IDs or class (Juan)
-				○ Pending
-				○ Programs page can be edited/updated
-					○ Pending
-			○ Get Involved
-				○ Assign IDs or class (Juan)
-				○ Pending
-				○ Get Involved page can be edited/updated
-					○ Pending
-			○ About Us
-				○ Assign IDs or class (Juan)
-				○ Pending
-				○ About Us page can be edited/updated
-					○ Pending
-			○ Contact
-				○ Assign IDs or class (Juan)
-				○ Pending
-				○ Contact page can be edited/updated
-					○ Pending
-			○ Donate
-				○ Assign IDs or class (Juan)
-				○ Pending
-				○ Donate page can be edited/updated
-					○ Pending
-				○ New staff members and donors can be added and are populated dynamically on their respective area/page (Brad)
-					○ Pending
-		○ Polish - Pending
-		
--------------------------------------------------------------------------------------------------------------------------------		
-
-CS3750 MILESTONE 2
-
-	• Main page view (non-edit view) - FINISHED!
-		○ NAV bar (Bradley) - FINISHED!
-		○ Links to pages (SaBree) - FINISHED!
-		○ Polish (Juan) - FINISHED!
-	• Secondary pages - FINISHED!
-		○ Pages - FINISHED!
-			○ Programs FINISHED!
-				○ edit page - Street Outreach (Robb) - FINISHED
-			○ Get Involved
-				○ edit page - Events: Google calendar (Juan) - FINISHED!
-			○ About Us
-				○ edit page - History, Staff, Board, Media - (Juan) - FINISHED
-			○ Contact FINISHED!
-				○ edit page - contact info (Juan) - FINISHED
-			○ Donate
-				○ edit page (SaBree) - FINISHED
-		○ Links to pages (Robb) - FINISHED!
-		○ Polish - (Juan) - FINISHED!
-	• Main page (Edit view) - FINISHED!
-		○ Side edit NAV bar (Bradley/Robb) - FINISHED!
-		○ Login requirement (Robb) - FINISHED!
-		○ Merge all CSS (SaBree) - FINISHED!
-	• SRS Updates - FINISHED!
-		○ Logging errors (Brad) - FINISHED!
-		○ Update SRS with current mods (SaBree) - FINISHED!
+	• Login requirement (Robb)
+		• Login user
+		• Logout user
+		• Disable/Enable Edit options
+	• Delete section
+		- This area lets you delete text but not the section
+		• Delete a specific section
+			○ Staff
+			○ Donor
+	• Links work as expected
+		○ Index
+		○ Programs
+		○ Get Involved
+		○ About Us
+		○ Contact
+		○ Donate
+	• Events?
+		○ Events description area?
+	• Add Youth Stories section?
+		○ Youth Stories section complete and ready for data to be input
+	• Coming soon page and Page Not found
+		○ Link the Programs in the navigation bar to the Coming Soon page
+		○ Program the application so that if it cannot find the correct url, it will redirect to the Page Not Found page
+	• Sidebar functionality works
+		○ Font Color
+		○ Font Size
+		○ Font Family
+		○ Add image or replace image
+			○ Front end code (Pull up file explorer?)
+			○ Back end code (Save image to resources)
+			○ Send to database (Updated link on front end saves to DB)
+		○ Styles
+	• Edit areas have constraints
+		○ Text does not flow out the screen, etc.
 
 Brad:
 <br/>
-Juan:
+Juan Chainz: Put some respeck on my name
 <br/>
 SaBree:
 <br/>
