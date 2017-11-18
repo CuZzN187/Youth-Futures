@@ -10,7 +10,7 @@ CS3750 MILESTONE 4
 		• Delete a specific section
 			○ Staff
 			○ Donor
-	• Links work as expected
+	• Links work as expected - SABREE
 		○ Index
 		○ Programs
 		○ Get Involved
@@ -21,7 +21,7 @@ CS3750 MILESTONE 4
 		○ Events description area?
 	• Add Youth Stories section?
 		○ Youth Stories section complete and ready for data to be input
-	• Coming soon page and Page Not found
+	• Coming soon page and Page Not found - SABREE
 		○ Link the Programs in the navigation bar to the Coming Soon page
 		○ Program the application so that if it cannot find the correct url, it will redirect to the Page Not Found page
 	• Sidebar functionality works
