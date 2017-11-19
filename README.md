@@ -38,7 +38,7 @@ CS3750 MILESTONE 4
 
 Brad:
 <br/>
-Juan Chainz: Put some respeck on my name
+Juan Chainz: <<<likes men
 <br/>
 SaBree:
 <br/>
