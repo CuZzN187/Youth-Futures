@@ -24,7 +24,7 @@ CS3750 MILESTONE 4
 	• Coming soon page and Page Not found - SABREE
 		○ Link the Programs in the navigation bar to the Coming Soon page
 		○ Program the application so that if it cannot find the correct url, it will redirect to the Page Not Found page
-	• Sidebar functionality works
+	• Sidebar functionality works (Robb)
 		○ Font Color
 		○ Font Size
 		○ Font Family
