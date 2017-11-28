@@ -55,8 +55,6 @@ namespace ASPNetWebTest.Controllers {
             return View();
         }
 
-<<<<<<< HEAD
-=======
         // GET: ComingSoon
         public ActionResult ComingSoon()
         {
@@ -64,7 +62,6 @@ namespace ASPNetWebTest.Controllers {
             return View();
         }
         
->>>>>>> 86a81c8341305c7347634c7c3e1833058d4c6fc4
         [HttpPost, ValidateInput(false)]
         public ActionResult Login(string username, string password) {
             //admin username and password
