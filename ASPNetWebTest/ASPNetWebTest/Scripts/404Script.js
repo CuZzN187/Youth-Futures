@@ -54,10 +54,17 @@ function myFunction() {
         //document.designMode = "on";
     }
 }
-//function for bold - double click to bold -- for now
-function Bold() {
-    document.execCommand('bold', false, null);
+//function for font colors/////////////////////////////////////////
+var
+    red = document.getElementById("red"),
+    blue = document.getElementById("blue");
+red.addEventListener("click", function () { setColor("#ff0000") });
+blue.addEventListener("click", function () { setColor("#0000ff") });
+function setColor(color) {
+    document.execCommand('styleWithCSS', false, true);
+    document.execCommand('foreColor', false, color);
 }
+/////////////////////////////////////////////////////////////////////
 
 function addStaff() {
     var insertedSection = document.createElement("SECTION");
@@ -278,14 +285,21 @@ function loginCreds() {
         dataType: "json",
         contentType: "application/json; charset=utf=8",
         data: JSON.stringify({ username, password }),
-        success: function (data) {
-            alert(data);
+        success: function (result) {
+            if (result == "pass") {
+                $("#editBtnEdit").show();
+                alert("Login Successful");
+            }
+            else {
+                $("#editBtnEdit").hide();
+                alert("Invalid Credentials");
+            }
         },
-        failure: function (errMsg) {
-            alert(errMsg);
+        failure: function (username, password) {
+            alert("Not successful");
         }
 
-    })
+    });
 }
 
 // Places the html inside the body tag

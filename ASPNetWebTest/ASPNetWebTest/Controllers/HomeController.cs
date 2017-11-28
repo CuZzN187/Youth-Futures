@@ -14,7 +14,7 @@ namespace ASPNetWebTest.Controllers {
 
         private static log4net.ILog Log { get; set; }
 
-        ILog log = log4net.LogManager.GetLogger(typeof(HomeController));
+        //ILog log = log4net.LogManager.GetLogger(typeof(HomeController));
 
         private DBContext dataBase = new DBContext();
 
@@ -52,23 +52,26 @@ namespace ASPNetWebTest.Controllers {
             ViewBag.HTMLContent = dataBase.Pages.Find(5).PageHtml;// Get page html from DB & and display
             return View();
         }
-        
+
         [HttpPost, ValidateInput(false)]
         public ActionResult Login(string username, string password) {
             //admin username and password
             string uname = dataBase.user.Find(1).UserAlias;
             string psw = dataBase.user.Find(1).UserPasswordHash;
-
             if(uname.Equals(username) && psw.Equals(password))
             {
                 //if log in passes
+                string pass = "pass";
+                return this.Json(pass);
             }
             else
             {
                 //invalid creds
+                string fail = "fail";
+                return this.Json(fail);
             }
-            return View();
-            }
+            
+        }
 
         // POST: /
         [HttpPost, ValidateInput(false)]

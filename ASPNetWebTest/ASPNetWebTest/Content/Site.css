@@ -1106,8 +1106,8 @@ footer .row {
     color: black;
     padding: 16px 32px;
     text-align: center;
+    /*display: none;*/
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     -webkit-transition-duration: 0.4s; /* Safari */
