@@ -21,6 +21,8 @@ namespace ASPNetWebTest.Controllers {
         //will need to make a static log class
         // GET: Index page
         public ActionResult Index() {
+            //dataBase.Pages.Find(1).PageHtml = @"";
+            //dataBase.SaveChanges();
             ViewBag.HTMLContent = dataBase.Pages.Find(1).PageHtml;// Get page html from DB & and display
             return View();
         }
@@ -50,6 +52,13 @@ namespace ASPNetWebTest.Controllers {
         public ActionResult Donate()
         {
             ViewBag.HTMLContent = dataBase.Pages.Find(5).PageHtml;// Get page html from DB & and display
+            return View();
+        }
+
+        // GET: ComingSoon
+        public ActionResult ComingSoon()
+        {
+            ViewBag.HTMLContent = dataBase.Pages.Find(6).PageHtml;// Get page html from DB & and display
             return View();
         }
         
@@ -120,5 +129,21 @@ namespace ASPNetWebTest.Controllers {
             ViewBag.HTMLContent = dataBase.Pages.Find(5).PageHtml;// Get page html from DB & and display
             return View();
         }
+
+        // Post: ComingSoon
+        [HttpPost, ValidateInput(false)]
+        public ActionResult ComingSoon(string html)
+        {
+            dataBase.Pages.Find(6).PageHtml = html;
+            dataBase.SaveChanges();
+            ViewBag.HTMLContent = dataBase.Pages.Find(6).PageHtml;// Get page html from DB & and display
+            return View();
+        }
+
+        public ActionResult HandleError()
+        {
+            return View();
+        }
+
     }
 }
