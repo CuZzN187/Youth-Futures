@@ -77,7 +77,7 @@ function addStaff() {
     staffPic.setAttribute("src", "../resources/staff_alyson.jpg");
 
     var staffName = document.createElement("SPAN");
-    staffName.setAttribute("class", "name")
+    staffName.setAttribute("class", "name");
     staffName.innerHTML = "NEW STAFF NAME";
 
     var staffTitle = document.createTextNode("STAFF TITLE");
