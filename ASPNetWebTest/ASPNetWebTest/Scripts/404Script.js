@@ -64,6 +64,22 @@ function setColor(color) {
     document.execCommand('styleWithCSS', false, true);
     document.execCommand('foreColor', false, color);
 }
+
+function DblClick() {
+    document.getElementsByClassName('dropdown').show();
+    //italics
+    //document.execCommand('italic', false, null);
+    //bold
+    //document.execCommand('bold', false, null);
+    //font color
+    //colors();
+}
+
+function colors() {
+    //font color - RED
+    document.execCommand('foreColor', false, '#ff0000');
+}
+
 /////////////////////////////////////////////////////////////////////
 
 function addStaff() {
@@ -287,11 +303,13 @@ function loginCreds() {
         data: JSON.stringify({ username, password }),
         success: function (result) {
             if (result == "pass") {
-                $("#editBtnEdit").show();
+                $('#editBtnEdit').css("display", "block");
+                //$("#editBtnEdit").show();
                 alert("Login Successful");
             }
             else {
-                $("#editBtnEdit").hide();
+                $('#editBtnEdit').css("display", "none");
+                //$("#editBtnEdit").hide();
                 alert("Invalid Credentials");
             }
         },
