@@ -17,9 +17,9 @@ CS3750 MILESTONE 4
 		○ About Us
 		○ Contact
 		○ Donate
-	• (MILESTONE 4) Events
+	• (MILESTONE 4) Events?
 		○ Replace the calendar with drop down description box elements
-	• (MILESTONE 4) Add Youth Stories section (JUAN)
+	• (MILESTONE 4) Add Youth Stories section (SABREE)
 		○ Add a new page (Blank page) to add youth stories
 	• (MILESTONE 4) Coming soon page and Page Not found - (SABREE)
 		○ Link the Programs in the navigation bar to the Coming Soon page
