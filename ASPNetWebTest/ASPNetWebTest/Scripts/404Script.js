@@ -290,7 +290,6 @@ function savePageToDB() {
 function loginCreds() {
     var username = $('#uname').val();
     var password = $('#psw').val();
-    //alert(username + password);
     var data = new Object();
     data.username = $('#uname').val();
     data.password = $('#psw').val();
@@ -318,6 +317,10 @@ function loginCreds() {
         }
 
     });
+
+    $(document).ready(function () {
+        
+    })
 }
 
 // Places the html inside the body tag

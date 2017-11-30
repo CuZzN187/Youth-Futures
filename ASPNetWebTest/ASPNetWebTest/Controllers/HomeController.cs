@@ -71,12 +71,14 @@ namespace ASPNetWebTest.Controllers {
             {
                 //if log in passes
                 string pass = "pass";
+                ViewBag.logIn = "pass";
                 return this.Json(pass);
             }
             else
             {
                 //invalid creds
                 string fail = "fail";
+                ViewBag.logIn = "fail";
                 return this.Json(fail);
             }
             
