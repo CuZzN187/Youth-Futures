@@ -35,6 +35,14 @@ CS3750 MILESTONE 4
 		○ Styles
 	• Edit areas have constraints
 		○ Text does not flow out the screen, etc.
+	• User functionality
+		○ Admin needs to sign in to C.R.U.D.
+		○ Display all users
+		○ Create user
+		○ Delete user
+		○ Update user
+			○ Password update
+			○ Username update
 
 Brad:
 <br/>
