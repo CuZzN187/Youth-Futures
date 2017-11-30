@@ -1,34 +1,34 @@
 ﻿# Youth-Futures - ANNOUNCEMENTS
 CS3750 MILESTONE 4
 
-	• Login requirement (Robb)
+	• (MILESTONE 4) Login requirement (ROB)
 		• Login user
 		• Logout user
 		• Disable/Enable Edit options
-	• Delete section
+	• (MILESTONE 3 & 4) Delete section (BRAD)
 		- This area lets you delete text but not the section
 		• Delete a specific section
 			○ Staff
 			○ Donor
-	• Links work as expected - SABREE
+	• (MILESTONE 4) Links work as expected - (SABREE)
 		○ Index
 		○ Programs
 		○ Get Involved
 		○ About Us
 		○ Contact
 		○ Donate
-	• Events?
-		○ Events description area?
-	• Add Youth Stories section?
-		○ Youth Stories section complete and ready for data to be input
-	• Coming soon page and Page Not found - SABREE
+	• (MILESTONE 4) Events
+		○ Replace the calendar with drop down description box elements
+	• (MILESTONE 4) Add Youth Stories section (JUAN)
+		○ Add a new page (Blank page) to add youth stories
+	• (MILESTONE 4) Coming soon page and Page Not found - (SABREE)
 		○ Link the Programs in the navigation bar to the Coming Soon page
 		○ Program the application so that if it cannot find the correct url, it will redirect to the Page Not Found page
-	• Sidebar functionality works (Robb)
+	• (MILESTONE 3 & 4) Sidebar functionality works (ROB & JUAN)
 		○ Font Color
 		○ Font Size
 		○ Font Family
-		○ Add image or replace image
+		○ Add image or replace image (JUAN)
 			○ Front end code (Pull up file explorer?)
 			○ Back end code (Save image to resources)
 			○ Send to database (Updated link on front end saves to DB)
@@ -38,7 +38,7 @@ CS3750 MILESTONE 4
 
 Brad:
 <br/>
-Juan Chainz: <<<likes men
+Juan Chainz: <<< Has a bald head
 <br/>
 SaBree:
 <br/>
