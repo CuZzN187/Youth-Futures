@@ -13,6 +13,10 @@
     }
 }
 
+function loadFunction() {
+
+}
+
 function loadElementsToEditView() {
     var nameBox = document.getElementById("elementName");
     nameBox.innerHTML = this.innerHTML; //incorrect targetting of right-side assignment
