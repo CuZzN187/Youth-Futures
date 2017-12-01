@@ -13,8 +13,26 @@
     }
 }
 
-function loadFunction() {
+function deleteElement() {
+    this.parentNode.parentNode.removeChild(this.parentNode);
+}
 
+function loadEditView() {
+    //makes all edit-specific items visible
+    var editElements = document.getElementsByClassName("editView");
+    for (var i = 0; i < editElements.length; ++i) {
+        editElements[i].style.visibility = "visible";
+    }
+    //adds events to the X buttons to remove items
+    var closeBtns = document.getElementsByClassName("editCloseBtn");
+    for (var i = 0; i < closeBtns.length; ++i) {
+        closeBtns[i].addEventListener('click', deleteElement, false);
+    }
+}
+
+function loadFunction() {
+    //TEMP UNTIL LOGIN FUNCTIONALITY IMPLEMENTATION
+    loadEditView();
 }
 
 function loadElementsToEditView() {
@@ -59,11 +77,11 @@ function myFunction() {
     }
 }
 //function for font colors/////////////////////////////////////////
-var
-    red = document.getElementById("red"),
-    blue = document.getElementById("blue");
-red.addEventListener("click", function () { setColor("#ff0000") });
-blue.addEventListener("click", function () { setColor("#0000ff") });
+//var
+//    red = document.getElementById("red"),
+//    blue = document.getElementById("blue");
+//red.addEventListener("click", function () { setColor("#ff0000") });
+//blue.addEventListener("click", function () { setColor("#0000ff") });
 function setColor(color) {
     document.execCommand('styleWithCSS', false, true);
     document.execCommand('foreColor', false, color);
@@ -85,6 +103,14 @@ function colors() {
 }
 
 /////////////////////////////////////////////////////////////////////
+
+function createDeleteBtn() {
+    var newDiv = document.createElement("DIV");
+    newDiv.setAttribute("class", "editCloseBtn editView");
+    newDiv.addEventListener("click", deleteElement, false);
+    newDiv.innerHTML = "X";
+    return newDiv;
+}
 
 function addStaff() {
     var insertedSection = document.createElement("SECTION");
@@ -113,6 +139,8 @@ function addStaff() {
     insertedParagraph.appendChild(staffDesc);
     insertedParagraph.appendChild(document.createElement("BR"));
     insertedParagraph.appendChild(staffEmail);
+
+    insertedSection.appendChild(createDeleteBtn());
 
     insertedSection.appendChild(staffPic);
     
@@ -147,6 +175,8 @@ function addDirector() {
     insertedParagraph.appendChild(document.createElement("BR"));
     insertedParagraph.appendChild(directorEmail);
 
+    insertedSection.appendChild(createDeleteBtn());
+
     insertedSection.appendChild(insertedParagraph);
 
     var staff = document.getElementsByClassName("board_members");
@@ -170,6 +200,7 @@ function addPlatDonor() {
     donorYear.setAttribute("class", "year");
     donorYear.innerHTML = "DONOR YEAR";
 
+    insertedDonor.appendChild(createDeleteBtn());
     insertedDonor.appendChild(donorName);
     insertedDonor.appendChild(donorYear);
     
@@ -193,6 +224,7 @@ function addGoldDonor() {
     donorYear.setAttribute("class", "year");
     donorYear.innerHTML = "DONOR YEAR";
 
+    insertedDonor.appendChild(createDeleteBtn());
     insertedDonor.appendChild(donorName);
     insertedDonor.appendChild(donorYear);
 
@@ -216,6 +248,7 @@ function addSilverDonor() {
     donorYear.setAttribute("class", "year");
     donorYear.innerHTML = "DONOR YEAR";
 
+    insertedDonor.appendChild(createDeleteBtn());
     insertedDonor.appendChild(donorName);
     insertedDonor.appendChild(donorYear);
 
@@ -239,6 +272,7 @@ function addBronzeDonor() {
     donorYear.setAttribute("class", "year");
     donorYear.innerHTML = "DONOR YEAR";
 
+    insertedDonor.appendChild(createDeleteBtn());
     insertedDonor.appendChild(donorName);
     insertedDonor.appendChild(donorYear);
 
@@ -308,6 +342,7 @@ function loginCreds() {
             if (result == "pass") {
                 $('#editBtnEdit').css("display", "block");
                 //$("#editBtnEdit").show();
+                loadEditView();
                 alert("Login Successful");
             }
             else {
