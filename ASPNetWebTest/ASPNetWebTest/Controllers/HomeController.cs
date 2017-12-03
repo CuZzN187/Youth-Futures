@@ -56,12 +56,11 @@ namespace ASPNetWebTest.Controllers {
         }
 
         // GET: ComingSoon
-        public ActionResult ComingSoon()
+        public ViewResult ComingSoon()
         {
-            ViewBag.HTMLContent = dataBase.Pages.Find(6).PageHtml;// Get page html from DB & and display
-            return View();
+            return View("ComingSoon");
         }
-        
+
         [HttpPost, ValidateInput(false)]
         public ActionResult Login(string username, string password) {
             //admin username and password
@@ -136,7 +135,7 @@ namespace ASPNetWebTest.Controllers {
         }
 
         // Post: ComingSoon
-        [HttpPost, ValidateInput(false)]
+        /*[HttpPost, ValidateInput(false)]
         public ActionResult ComingSoon(string html)
         {
             dataBase.Pages.Find(6).PageHtml = html;
@@ -144,7 +143,7 @@ namespace ASPNetWebTest.Controllers {
             ViewBag.HTMLContent = dataBase.Pages.Find(6).PageHtml;// Get page html from DB & and display
             return View();
         }
-
+        */
         public ActionResult HandleError()
         {
             return View();
