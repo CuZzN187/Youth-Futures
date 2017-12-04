@@ -72,6 +72,7 @@ function myFunction() {
         document.getElementById("sideEdit").contentEditable = "false";
         button.style.backgroundColor = "#6F9";
         button.innerHTML = 'Save Changes';
+        loadEditView();
         //document.designMode = "on";
     }
 }
