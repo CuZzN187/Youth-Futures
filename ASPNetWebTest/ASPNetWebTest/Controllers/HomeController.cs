@@ -87,9 +87,11 @@ namespace ASPNetWebTest.Controllers {
         public ViewResult YouthStories()
         {
             ViewBag.HTMLContent = dataBase.Pages.Find(6).PageHtml;// Get page html from DB & and display
+            checkAndDisplayLoginOrLogout();
+            checkAndDisplayButton();
             return View();
         }
-        // Post: Programs page
+        // Post: YouthStories page
         [HttpPost, ValidateInput(false)]
         public ActionResult YouthStories(string html)
         {

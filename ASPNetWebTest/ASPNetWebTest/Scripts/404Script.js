@@ -87,15 +87,15 @@ function setColor(color) {
     document.execCommand('foreColor', false, color);
 }
 
-function DblClick() {
-    document.getElementsByClassName('dropdown').show();
-    //italics
-    //document.execCommand('italic', false, null);
-    //bold
-    //document.execCommand('bold', false, null);
-    //font color
-    //colors();
-}
+//function DblClick() {
+//    document.getElementsByClassName('dropdown').show();
+//    //italics
+//    //document.execCommand('italic', false, null);
+//    //bold
+//    //document.execCommand('bold', false, null);
+//    //font color
+//    //colors();
+//}
 
 function colors() {
     //font color - RED
