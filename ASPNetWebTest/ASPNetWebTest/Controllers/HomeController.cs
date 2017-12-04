@@ -61,6 +61,22 @@ namespace ASPNetWebTest.Controllers {
             return View("ComingSoon");
         }
 
+        // GET: YouthStores
+        public ViewResult YouthStories()
+        {
+            ViewBag.HTMLContent = dataBase.Pages.Find(6).PageHtml;// Get page html from DB & and display
+            return View();
+        }
+        // Post: Programs page
+        [HttpPost, ValidateInput(false)]
+        public ActionResult YouthStories(string html)
+        {
+            dataBase.Pages.Find(6).PageHtml = html;
+            dataBase.SaveChanges();
+            ViewBag.HTMLContent = dataBase.Pages.Find(6).PageHtml;// Get page html from DB & and display
+            return View();
+        }
+
         [HttpPost, ValidateInput(false)]
         public ActionResult Login(string username, string password) {
             //admin username and password

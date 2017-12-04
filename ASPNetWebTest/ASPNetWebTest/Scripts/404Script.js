@@ -370,3 +370,16 @@ function PostPageByID(id){
     //}
     //document.getElementsByTagName("body")[0].innerHTML = "";
 }
+function addStory() {
+    var textarea = document.getElementById("story-ta");
+    var div = document.createElement('div');
+    div.innerHTML = '<h4>' + textarea.value + '</h4>';
+    document.getElementById('story-list').appendChild(div);
+    textarea.value = '';
+
+    var html = document.body.innerHTML
+    $.post("YouthStories", {
+        html: html
+    });
+
+}
