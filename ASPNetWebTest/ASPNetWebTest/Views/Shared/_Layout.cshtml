@@ -30,8 +30,8 @@
                     <li>@Html.ActionLink("About Us", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li style="background-color: cornflowerblue;">@Html.ActionLink("Donate", "Donate", "Home")</li>
-                    <li> <a onclick="document.getElementById('id01').style.display = 'block'">Login</a></li>
-                    <li><button id ="editBtnEdit" onclick="myFunction();" type="button">Edit Document</button></li>
+                    <li> @Html.Raw(ViewData["LoginOrLogout"].ToString())</li>
+                    <li>@Html.Raw(ViewData["BaldHeadButton"].ToString())</li>
                 </ul>
             </div>
         </div>

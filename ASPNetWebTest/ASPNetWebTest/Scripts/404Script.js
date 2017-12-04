@@ -31,8 +31,7 @@ function loadEditView() {
 }
 
 function loadFunction() {
-    //TEMP UNTIL LOGIN FUNCTIONALITY IMPLEMENTATION
-    loadEditView();
+    
 }
 
 function loadElementsToEditView() {
@@ -73,6 +72,7 @@ function myFunction() {
         document.getElementById("sideEdit").contentEditable = "false";
         button.style.backgroundColor = "#6F9";
         button.innerHTML = 'Save Changes';
+        loadEditView();
         //document.designMode = "on";
     }
 }
@@ -308,6 +308,54 @@ function getPageIndex() {
     return index;
 }
 
+function urlRetrieval(loggingInOut)
+{
+    var url = document.URL;
+
+    if (loggingInOut == "Login") {
+        if (url.includes("Programs")) {
+            url = "Login";
+        }
+        else if (url.includes("Involved")) {
+            url = "Login";
+        }
+        else if (url.includes("About")) {
+            url = "Login";
+        }
+        else if (url.includes("Contact")) {
+            url = "Login";
+        }
+        else if (url.includes("Donate")) {
+            url = "Login";
+        }
+        else {
+            url = "Home/Login";
+        }
+    }
+    else {
+        if (url.includes("Programs")) {
+            url = "Logout";
+        }
+        else if (url.includes("Involved")) {
+            url = "Logout";
+        }
+        else if (url.includes("About")) {
+            url = "Logout";
+        }
+        else if (url.includes("Contact")) {
+            url = "Logout";
+        }
+        else if (url.includes("Donate")) {
+            url = "Logout";
+        }
+        else {
+            url = "Home/Logout";
+        }
+    }
+
+    return url;
+}
+
 function savePageToDB() {
     var bodyHTML = getPageHtml();
     var index = getPageIndex();
@@ -331,23 +379,23 @@ function loginCreds() {
     var data = new Object();
     data.username = $('#uname').val();
     data.password = $('#psw').val();
+    var urlRetrieve = urlRetrieval("Login");
 
     jQuery.ajax({
         type: "POST",
-        url: "Home/Login",
+        url: urlRetrieve,
         dataType: "json",
         contentType: "application/json; charset=utf=8",
         data: JSON.stringify({ username, password }),
         success: function (result) {
             if (result == "pass") {
                 $('#editBtnEdit').css("display", "block");
-                //$("#editBtnEdit").show();
                 loadEditView();
+                location.reload(true);
                 alert("Login Successful");
             }
             else {
                 $('#editBtnEdit').css("display", "none");
-                //$("#editBtnEdit").hide();
                 alert("Invalid Credentials");
             }
         },
@@ -356,19 +404,38 @@ function loginCreds() {
         }
 
     });
-
-    $(document).ready(function () {
-        
-    })
+    location.reload(true);
 }
 
-// Places the html inside the body tag
-function PostPageByID(id){
-    //var query = null;
-    //if (Number.isInteger(id)) {
-    //    query = "SELECT PageHtml FROM dbo.Page WHERE PageID = " + id;
-    //}
-    //document.getElementsByTagName("body")[0].innerHTML = "";
+function logout() {
+    var username = "";
+    var password = "";
+    var data = new Object();
+    var urlRetrieve = urlRetrieval("Logout");
+
+    jQuery.ajax({
+        type: "POST",
+        url: urlRetrieve,
+        dataType: "json",
+        contentType: "application/json; charset=utf=8",
+        data: JSON.stringify({ username, password }),
+        success: function (result) {
+            if (result == "pass") {
+                $('#editBtnEdit').css("display", "block");
+                location.reload(true);
+                alert("Logout Successful");
+            }
+            else {
+                $('#editBtnEdit').css("display", "none");
+                alert("Error logging out");
+            }
+        },
+        failure: function (username, password) {
+            alert("Not successful");
+        }
+
+    });
+    location.reload(true);
 }
 function addStory() {
     var textarea = document.getElementById("story-ta");
