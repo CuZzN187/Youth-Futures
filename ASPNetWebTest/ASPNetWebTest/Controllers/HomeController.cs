@@ -23,6 +23,8 @@ namespace ASPNetWebTest.Controllers {
         private bool signedIn = false;
 
         private string editButtonElement = @"<button id =""editBtnEdit"" onclick=""myFunction();"" type=""button"">Edit Document</button>";
+        private string loginElement = @"<a onclick=""document.getElementById('id01').style.display = 'block'"">Login</a>";
+        private string logoutElement = @"<a onclick=""logout()"">Logout</a>";
 
         //will need to make a static log class
         // GET: Index page
@@ -30,6 +32,7 @@ namespace ASPNetWebTest.Controllers {
             //dataBase.Pages.Find(1).PageHtml = @"";
             //dataBase.SaveChanges();
             ViewBag.HTMLContent = dataBase.Pages.Find(1).PageHtml;// Get page html from DB & and display
+            checkAndDisplayLoginOrLogout();
             checkAndDisplayButton();
             return View();
         }
@@ -37,18 +40,21 @@ namespace ASPNetWebTest.Controllers {
         public ActionResult Programs()
         {
             ViewBag.HTMLContent = dataBase.Pages.Find(2).PageHtml;// Get page html from DB & and display
+            checkAndDisplayLoginOrLogout();
             checkAndDisplayButton();
             return View();
         }
         // GET: Involved, not pulling yet....... THIS WILL BE INDEX 6
         public ActionResult Involved()
         {
+            checkAndDisplayLoginOrLogout();
             checkAndDisplayButton();
             return View();
         }
         // GET: About page
         public ActionResult About() {
             ViewBag.HTMLContent = dataBase.Pages.Find(3).PageHtml;// Get page html from DB & and display
+            checkAndDisplayLoginOrLogout();
             checkAndDisplayButton();
             return View();
         }
@@ -56,6 +62,7 @@ namespace ASPNetWebTest.Controllers {
         public ActionResult Contact()
         {
             ViewBag.HTMLContent = dataBase.Pages.Find(4).PageHtml;// Get page html from DB & and display
+            checkAndDisplayLoginOrLogout();
             checkAndDisplayButton();
             return View();
         }
@@ -63,6 +70,7 @@ namespace ASPNetWebTest.Controllers {
         public ActionResult Donate()
         {
             ViewBag.HTMLContent = dataBase.Pages.Find(5).PageHtml;// Get page html from DB & and display
+            checkAndDisplayLoginOrLogout();
             checkAndDisplayButton();
             return View();
         }
@@ -71,6 +79,7 @@ namespace ASPNetWebTest.Controllers {
         public ViewResult ComingSoon()
         {
             checkAndDisplayButton();
+            checkAndDisplayLoginOrLogout();
             return View("ComingSoon");
         }
 
@@ -97,12 +106,12 @@ namespace ASPNetWebTest.Controllers {
             
         }
 
-        //[HttpPost, ValidateInput(false)]
-        //public ActionResult LogOut(string username, string password)
-        //{
-        //    // TODO:...
-
-        //}
+        [HttpPost, ValidateInput(false)]
+        public ActionResult Logout(string username, string password)
+        {
+            currentUser = null;
+            return this.Json("pass");
+        }
 
         // POST: /
         [HttpPost, ValidateInput(false)]
@@ -179,6 +188,18 @@ namespace ASPNetWebTest.Controllers {
             else
             {
                 ViewData["BaldHeadButton"] = editButtonElement;
+            }
+        }
+
+        public void checkAndDisplayLoginOrLogout()
+        {
+            if (currentUser == null)
+            {
+                ViewData["LoginOrLogout"] = loginElement;
+            }
+            else
+            {
+                ViewData["LoginOrLogout"] = logoutElement;
             }
         }
 

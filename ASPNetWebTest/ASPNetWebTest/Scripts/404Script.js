@@ -362,6 +362,41 @@ function loginCreds() {
     })
 }
 
+function logout() {
+    var username = "";
+    var password = "";
+    var data = new Object();
+
+    jQuery.ajax({
+        type: "POST",
+        url: "Home/Logout",
+        dataType: "json",
+        contentType: "application/json; charset=utf=8",
+        data: JSON.stringify({ username, password }),
+        success: function (result) {
+            if (result == "pass") {
+                $('#editBtnEdit').css("display", "block");
+                //$("#editBtnEdit").show();
+                loadEditView();
+                location.reload();
+                alert("Logout Successful");
+            }
+            else {
+                $('#editBtnEdit').css("display", "none");
+                //$("#editBtnEdit").hide();
+                alert("Error logging out");
+            }
+        },
+        failure: function (username, password) {
+            alert("Not successful");
+        }
+
+    });
+    location.reload();
+    $(document).ready(function () {
+    })
+}
+
 // Places the html inside the body tag
 function PostPageByID(id){
     //var query = null;
