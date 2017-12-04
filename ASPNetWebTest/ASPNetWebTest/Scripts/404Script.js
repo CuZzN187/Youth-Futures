@@ -405,9 +405,6 @@ function loginCreds() {
 
     });
     location.reload(true);
-    $(document).ready(function () {
-        location.reload(true);
-    })
 }
 
 function logout() {
@@ -439,6 +436,4 @@ function logout() {
 
     });
     location.reload(true);
-    $(document).ready(function () {
-    })
 }
