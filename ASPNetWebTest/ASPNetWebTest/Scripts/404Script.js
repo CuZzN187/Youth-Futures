@@ -328,6 +328,9 @@ function urlRetrieval(loggingInOut)
         else if (url.includes("Donate")) {
             url = "Login";
         }
+        else if (url.includes("YouthStories")) {
+            url = "Login";
+        }
         else {
             url = "Home/Login";
         }
@@ -346,6 +349,9 @@ function urlRetrieval(loggingInOut)
             url = "Logout";
         }
         else if (url.includes("Donate")) {
+            url = "Logout";
+        }
+        else if (url.includes("YouthStories")) {
             url = "Logout";
         }
         else {
