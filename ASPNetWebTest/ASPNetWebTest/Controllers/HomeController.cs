@@ -18,46 +18,59 @@ namespace ASPNetWebTest.Controllers {
 
         private DBContext dataBase = new DBContext();
 
+        private static User currentUser = null;
+
+        private bool signedIn = false;
+
+        private string editButtonElement = @"<button id =""editBtnEdit"" onclick=""myFunction();"" type=""button"">Edit Document</button>";
+
         //will need to make a static log class
         // GET: Index page
         public ActionResult Index() {
             //dataBase.Pages.Find(1).PageHtml = @"";
             //dataBase.SaveChanges();
             ViewBag.HTMLContent = dataBase.Pages.Find(1).PageHtml;// Get page html from DB & and display
+            checkAndDisplayButton();
             return View();
         }
         // GET: Programs page
         public ActionResult Programs()
         {
             ViewBag.HTMLContent = dataBase.Pages.Find(2).PageHtml;// Get page html from DB & and display
+            checkAndDisplayButton();
             return View();
         }
         // GET: Involved, not pulling yet....... THIS WILL BE INDEX 6
         public ActionResult Involved()
         {
+            checkAndDisplayButton();
             return View();
         }
         // GET: About page
         public ActionResult About() {
             ViewBag.HTMLContent = dataBase.Pages.Find(3).PageHtml;// Get page html from DB & and display
+            checkAndDisplayButton();
             return View();
         }
         // GET: Contact
         public ActionResult Contact()
         {
             ViewBag.HTMLContent = dataBase.Pages.Find(4).PageHtml;// Get page html from DB & and display
+            checkAndDisplayButton();
             return View();
         }
         // GET: Donate
         public ActionResult Donate()
         {
             ViewBag.HTMLContent = dataBase.Pages.Find(5).PageHtml;// Get page html from DB & and display
+            checkAndDisplayButton();
             return View();
         }
 
         // GET: ComingSoon
         public ViewResult ComingSoon()
         {
+            checkAndDisplayButton();
             return View("ComingSoon");
         }
 
@@ -71,6 +84,7 @@ namespace ASPNetWebTest.Controllers {
                 //if log in passes
                 string pass = "pass";
                 ViewBag.logIn = "pass";
+                currentUser = dataBase.user.Find(1);
                 return this.Json(pass);
             }
             else
@@ -82,6 +96,13 @@ namespace ASPNetWebTest.Controllers {
             }
             
         }
+
+        //[HttpPost, ValidateInput(false)]
+        //public ActionResult LogOut(string username, string password)
+        //{
+        //    // TODO:...
+
+        //}
 
         // POST: /
         [HttpPost, ValidateInput(false)]
@@ -147,6 +168,18 @@ namespace ASPNetWebTest.Controllers {
         public ActionResult HandleError()
         {
             return View();
+        }
+
+        public void checkAndDisplayButton()
+        {
+            if(currentUser == null)
+            {
+                ViewData["BaldHeadButton"] = "";
+            }
+            else
+            {
+                ViewData["BaldHeadButton"] = editButtonElement;
+            }
         }
 
     }

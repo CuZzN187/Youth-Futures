@@ -343,6 +343,7 @@ function loginCreds() {
                 $('#editBtnEdit').css("display", "block");
                 //$("#editBtnEdit").show();
                 loadEditView();
+                location.reload();
                 alert("Login Successful");
             }
             else {
@@ -356,9 +357,8 @@ function loginCreds() {
         }
 
     });
-
+    location.reload();
     $(document).ready(function () {
-        
     })
 }
 
