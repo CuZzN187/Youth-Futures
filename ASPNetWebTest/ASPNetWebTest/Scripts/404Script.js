@@ -308,6 +308,32 @@ function getPageIndex() {
     return index;
 }
 
+function urlRetrieval()
+{
+    var url = document.URL;
+
+    if (url.includes("Programs")) {
+        url = "Home/Programs/Login";
+    }
+    else if (url.includes("Involved")) {
+        url = "Home/Involved/Login";
+    }
+    else if (url.includes("About")) {
+        url = "Home/About/Login";
+    }
+    else if (url.includes("Contact")) {
+        url = "Home/Contact/Login";
+    }
+    else if (url.includes("Donate")) {
+        url = "Home/Donate/Login";
+    }
+    else{
+        url = "Home/Login";
+    }
+
+    return url;
+}
+
 function savePageToDB() {
     var bodyHTML = getPageHtml();
     var index = getPageIndex();
@@ -331,10 +357,11 @@ function loginCreds() {
     var data = new Object();
     data.username = $('#uname').val();
     data.password = $('#psw').val();
+    var urlRetrieve = urlRetrieval();
 
     jQuery.ajax({
         type: "POST",
-        url: "Home/Login",
+        url: urlRetrieve,
         dataType: "json",
         contentType: "application/json; charset=utf=8",
         data: JSON.stringify({ username, password }),
