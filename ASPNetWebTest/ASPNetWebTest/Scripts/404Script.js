@@ -308,27 +308,49 @@ function getPageIndex() {
     return index;
 }
 
-function urlRetrieval()
+function urlRetrieval(loggingInOut)
 {
     var url = document.URL;
 
-    if (url.includes("Programs")) {
-        url = "Home/Programs/Login";
+    if (loggingInOut == "Login") {
+        if (url.includes("Programs")) {
+            url = "Login";
+        }
+        else if (url.includes("Involved")) {
+            url = "Login";
+        }
+        else if (url.includes("About")) {
+            url = "Login";
+        }
+        else if (url.includes("Contact")) {
+            url = "Login";
+        }
+        else if (url.includes("Donate")) {
+            url = "Login";
+        }
+        else {
+            url = "Home/Login";
+        }
     }
-    else if (url.includes("Involved")) {
-        url = "Home/Involved/Login";
-    }
-    else if (url.includes("About")) {
-        url = "Home/About/Login";
-    }
-    else if (url.includes("Contact")) {
-        url = "Home/Contact/Login";
-    }
-    else if (url.includes("Donate")) {
-        url = "Home/Donate/Login";
-    }
-    else{
-        url = "Home/Login";
+    else {
+        if (url.includes("Programs")) {
+            url = "Logout";
+        }
+        else if (url.includes("Involved")) {
+            url = "Logout";
+        }
+        else if (url.includes("About")) {
+            url = "Logout";
+        }
+        else if (url.includes("Contact")) {
+            url = "Logout";
+        }
+        else if (url.includes("Donate")) {
+            url = "Logout";
+        }
+        else {
+            url = "Home/Logout";
+        }
     }
 
     return url;
@@ -357,7 +379,7 @@ function loginCreds() {
     var data = new Object();
     data.username = $('#uname').val();
     data.password = $('#psw').val();
-    var urlRetrieve = urlRetrieval();
+    var urlRetrieve = urlRetrieval("Login");
 
     jQuery.ajax({
         type: "POST",
@@ -368,14 +390,12 @@ function loginCreds() {
         success: function (result) {
             if (result == "pass") {
                 $('#editBtnEdit').css("display", "block");
-                //$("#editBtnEdit").show();
                 loadEditView();
-                location.reload();
+                location.reload(true);
                 alert("Login Successful");
             }
             else {
                 $('#editBtnEdit').css("display", "none");
-                //$("#editBtnEdit").hide();
                 alert("Invalid Credentials");
             }
         },
@@ -384,8 +404,9 @@ function loginCreds() {
         }
 
     });
-    location.reload();
+    location.reload(true);
     $(document).ready(function () {
+        location.reload(true);
     })
 }
 
@@ -393,23 +414,22 @@ function logout() {
     var username = "";
     var password = "";
     var data = new Object();
+    var urlRetrieve = urlRetrieval("Logout");
 
     jQuery.ajax({
         type: "POST",
-        url: "Home/Logout",
+        url: urlRetrieve,
         dataType: "json",
         contentType: "application/json; charset=utf=8",
         data: JSON.stringify({ username, password }),
         success: function (result) {
             if (result == "pass") {
                 $('#editBtnEdit').css("display", "block");
-                //$("#editBtnEdit").show();
-                location.reload();
+                location.reload(true);
                 alert("Logout Successful");
             }
             else {
                 $('#editBtnEdit').css("display", "none");
-                //$("#editBtnEdit").hide();
                 alert("Error logging out");
             }
         },
@@ -418,16 +438,7 @@ function logout() {
         }
 
     });
-    location.reload();
+    location.reload(true);
     $(document).ready(function () {
     })
-}
-
-// Places the html inside the body tag
-function PostPageByID(id){
-    //var query = null;
-    //if (Number.isInteger(id)) {
-    //    query = "SELECT PageHtml FROM dbo.Page WHERE PageID = " + id;
-    //}
-    //document.getElementsByTagName("body")[0].innerHTML = "";
 }
