@@ -1369,7 +1369,7 @@ span.psw {
 }
 
 .editView {
-    visibility: visible;
+    visibility: hidden;
 }
 
 .outreach_main_img {

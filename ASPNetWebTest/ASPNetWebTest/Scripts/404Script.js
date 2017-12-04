@@ -31,8 +31,7 @@ function loadEditView() {
 }
 
 function loadFunction() {
-    //TEMP UNTIL LOGIN FUNCTIONALITY IMPLEMENTATION
-    loadEditView();
+    
 }
 
 function loadElementsToEditView() {
@@ -377,7 +376,6 @@ function logout() {
             if (result == "pass") {
                 $('#editBtnEdit').css("display", "block");
                 //$("#editBtnEdit").show();
-                loadEditView();
                 location.reload();
                 alert("Logout Successful");
             }
