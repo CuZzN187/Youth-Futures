@@ -201,11 +201,11 @@ namespace ASPNetWebTest.Controllers {
         {
             if(currentUser == null)
             {
-                ViewData["BaldHeadButton"] = "";
+                ViewData["LoginButton"] = "";
             }
             else
             {
-                ViewData["BaldHeadButton"] = editButtonElement;
+                ViewData["LoginButton"] = editButtonElement;
             }
         }
 
