@@ -67,7 +67,7 @@ function myFunction() {
         //document.designMode = "off";
         savePageToDB();
     } else {
-        document.getElementsByClassName("sidebar")[0].style.width = "250px";
+        document.getElementsByClassName("sidebar")[0].style.width = "0px";
         editor.contentEditable = 'true';
         document.getElementById("sideEdit").contentEditable = "false";
         button.style.backgroundColor = "#6F9";
