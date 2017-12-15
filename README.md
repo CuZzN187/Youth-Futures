@@ -46,7 +46,7 @@ CS3750 MILESTONE 4
 
 Brad:
 <br/>
-Juan Chainz: <<< Has a bald head
+Juan Chainz: <<< is gay
 <br/>
 SaBree:
 <br/>
